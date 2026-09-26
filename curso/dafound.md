@@ -1,7 +1,7 @@
 ---
 layout: course 
 title: "Plataforma de Laboratorios Netec" 
-subtitle: "Data Analytics Foundations # COLOCAR EL NOMBRE REAL DEL CURSO
+subtitle: "Data Analytics Foundations" # COLOCAR EL NOMBRE REAL DEL CURSO
 emoji: "✨" 
 intro: |
   Bienvenido a la **Plataforma de Laboratorios** del curso **Data Analytics Foundations**. Aquí podrás explorar diferentes configuraciones a través de prácticas guiadas. ¡Desarrolla tus habilidades y lleva tus conocimientos al siguiente nivel!

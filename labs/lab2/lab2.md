@@ -1,90 +1,98 @@
 ---
 layout: lab
-title: "Práctica 2: CAMBIAR_AQUI_NOMBRE_DE_LA_PRACTICA"
+title: "Reto 1: Diagnóstico de una caída de ventas"
 permalink: /lab2/lab2/
 images_base: /labs/lab2/img
-duration: "## minutos"
+duration: "13 minutos"
 objective:
-  - OBJETIVO_DE_LA_PRACTICA
+  - Formular de manera autónoma una pregunta analítica medible a partir de una solicitud comercial ambigua, identificando la decisión, la métrica, el periodo, las dimensiones y una hipótesis que deberá validarse posteriormente.
 prerequisites:
-  - PREREQUISITO_1
-  - PREREQUISITO_2
-  - PREREQUISITO_3
-  - PREREQUISITO_4
-  - PREREQUISITO_X
+  - Haber completado la Práctica 1: Convertir solicitudes operativas en preguntas analíticas.
+  - Disponer de Microsoft Excel para Microsoft 365.
+  - Tener acceso a Internet para descargar la plantilla del reto.
+  - Conservar los recursos compartidos en C:\\DAF\\00_recursos\\.
 introduction:
-  - INTRODUCCION_DE_LA_PRACTICA_BREVE_RESUMEN_EN_UN_SOLO_PARRAFO_RECOMENDADO
+  - En este reto trabajarás de forma autónoma con una solicitud del liderazgo comercial relacionada con una posible caída de desempeño. Deberás transformar esa solicitud en una pregunta analítica medible y trazable al dataset artificial masivo de ventas, disponible en versiones equivalentes para Excel, Snowflake y Power BI. No consultarás todavía Snowflake ni construirás visualizaciones en Power BI; el objetivo es definir correctamente qué debe analizarse antes de trabajar con los datos.
 slug: lab2
 lab_number: 2
 final_result: >
-  RESULTADO_FINAL_ESPERADO_DE_LA_PRACTICA_EN_UN_SOLO_PARRAFO_RECOMENDADO
+  Al finalizar habrás creado un archivo de Excel con la interpretación de la solicitud, las ambigüedades detectadas, la decisión que debe apoyar el análisis, una pregunta analítica medible y una hipótesis inicial claramente identificada como pendiente de validación.
 notes:
-  - NOTAS_CONSIDERACIONES_ADICIONALES
-  - NOTAS_CONSIDERACIONES_ADICIONALES
+  - El reto debe resolverse con mayor autonomía que la práctica. Utiliza como referencia el método aprendido, pero evita copiar literalmente la pregunta construida en la Práctica 1.
+  - El dataset es artificial y representa entre 500,000 y 1,000,000 de transacciones. La pregunta formulada deberá ser compatible con un análisis posterior en Snowflake y Power BI.
 references:
-  - text: DESCRIPCION_DEL_LINK_DE_REFERENCIA
-    url: https://developer.hashicorp.com/terraform
-  - text: DESCRIPCION_DEL_LINK_DE_REFERENCIA
-    url: https://learn.microsoft.com/es-es/cli/azure/
+  - text: Microsoft Support - Crear y dar formato a tablas en Excel
+    url: https://support.microsoft.com/es-es/office/crear-y-dar-formato-a-tablas-2cf0c3f0-ecfc-4f0e-99f1-a2cd4f7f7f6e
+  - text: Snowflake Documentation
+    url: https://docs.snowflake.com/
 prev: /lab1/lab1/
-next: /lab3/lab3/
+next: /lab2/lab2/
 ---
 
----
+<!-- Aquí comienzan las instrucciones paso a paso del reto -->
 
-<!-- Aquí comienzan las instrucciones paso a paso de la práctica -->
+## 🔎 Tarea 1. Interpretar el escenario comercial — 4 min
 
-## 🔎 Tarea 1. NOMBRE DE LA TAREA — ## min
+Analizarás una solicitud del liderazgo comercial para identificar qué información falta, qué decisión se pretende apoyar y qué evidencia será necesaria antes de realizar cualquier análisis sobre el dataset.
 
-<!-- DESCRIPCION DE LA TAREA: RECOMENDADO 200-250 CARACTERES -->
-DESCRIPCION_DE_LA_TAREA.
+### Tarea 1.1. Preparar el archivo del reto
 
-### Tarea 1.1. NOMBRE DE_LA_SUBTAREA
+Crearás la carpeta del Reto 01 dentro del directorio central y descargarás la plantilla específica sin duplicar los recursos compartidos del curso.
 
-<!-- DESCRIPCION DE LA SUBTAREA: RECOMENDADO 120-150 CARACTERES -->
-DESCRIPCION_DE_LA_SUBTAREA.
+- {% include step_label.html %} Abre Git Bash y crea la carpeta `Reto_01` dentro del directorio central del curso.
 
-- {% include step_label.html %} DESCRIPCION_DEL_PASO_1. <!-- DESCRIPCION DEL PASO: RECOMENDADO 120 CARACTERES -->
+  ```bash
+  mkdir -p /c/DAF/Reto_01
+  ```
 
-  > **Nota:** NOTA_GENERAL_DEL_PASO.
+  > **Nota:** Reutiliza el diccionario y la muestra existentes en `C:\DAF\00_recursos\`; no es necesario descargarlos nuevamente.
   {: .lab-note .info .compact}
 
-  {% include step_image.html %}
-
-  ```bash
-  CODIGO_DEL_PASO_1
-  ```
-
-  > **Salida esperada:** DESCRIPCION_DE_LA_SALIDA_ESPERADA_DEL_PASO_1.
+  > **Salida esperada:** Existe la carpeta `C:\DAF\Reto_01\` y los recursos compartidos continúan disponibles en `C:\DAF\00_recursos\`.
   {: .lab-note .output .compact}
 
-- {% include step_label.html %} DESCRIPCION_DEL_PASO_2. <!-- DESCRIPCION DEL PASO: RECOMENDADO 120 CARACTERES -->
+- {% include step_label.html %} Descarga la plantilla del reto desde la URL proporcionada, ábrela en Excel y guarda la copia de trabajo con el nombre indicado.
 
-  > **Importante:** CONSIDERACION_IMPORTANTE_DEL_PASO.
+  [Descargar plantilla del Reto 1](URL_PLANTILLA_RETO_01)
+
+  Guarda primero la descarga como:
+
+  ```text
+  C:\DAF\Reto_01\Plantilla_Reto1_Diagnostico.xlsx
+  ```
+
+  Después guarda la copia editable como:
+
+  ```text
+  C:\DAF\Reto_01\01_reto_diagnostico_caida_ventas.xlsx
+  ```
+
+  > **Importante:** No modifiques `Plantilla_Reto1_Diagnostico.xlsx`. Trabaja únicamente sobre `01_reto_diagnostico_caida_ventas.xlsx`.
   {: .lab-note .important .compact}
 
-  ```bash
-  CODIGO_DEL_PASO_2
-  ```
-
-  > **Salida esperada:** DESCRIPCION_DE_LA_SALIDA_ESPERADA_DEL_PASO_2.
+  > **Salida esperada:** Excel muestra la copia editable del reto y la plantilla original permanece sin modificar.
   {: .lab-note .output .compact}
 
-### Tarea 1.2. NOMBRE_DE_LA_SUBTAREA
+### Tarea 1.2. Detectar ambigüedades y definir la decisión
 
-<!-- DESCRIPCION DE LA SUBTAREA: RECOMENDADO 120-150 CARACTERES -->
-DESCRIPCION_DE_LA_SUBTAREA.
+Trabajarás con una solicitud distinta a la utilizada en la práctica guiada para demostrar que puedes aplicar el método a un nuevo escenario.
 
-- {% include step_label.html %} DESCRIPCION_DEL_PASO_3. <!-- DESCRIPCION DEL PASO: RECOMENDADO 120 CARACTERES -->
+- {% include step_label.html %} Registra en la primera hoja la siguiente solicitud del liderazgo comercial:
 
-  > **Advertencia:** ADVERTENCIA_DEL_PASO.
+  > “La dirección comercial considera que la región Norte está perdiendo desempeño y propone aumentar promociones. Antes de aprobar presupuesto, solicita evidencia que permita determinar si el problema está realmente concentrado en esa región y qué segmentos deberían investigarse.”
+
+  > **Advertencia:** La solicitud contiene una interpretación previa. No asumas que existe una caída ni que las promociones sean la solución correcta.
   {: .lab-note .warning .compact}
 
-  ```bash
-  CODIGO_DEL_PASO_3
-  ```
+  > **Salida esperada:** La solicitud aparece registrada en el archivo exactamente como fue proporcionada.
+  {: .lab-note .output .compact}
 
-  > **Salida esperada:** DESCRIPCION_DE_LA_SALIDA_ESPERADA_DEL_PASO_3.
+- {% include step_label.html %} Identifica al menos tres ambigüedades y escribe la decisión concreta que el análisis debería apoyar.
+
+  > **Nota:** Considera elementos como métrica, periodo, comparación, dimensiones, alcance regional y criterio para aprobar una intervención comercial.
+  {: .lab-note .info .compact}
+
+  > **Salida esperada:** El archivo contiene tres o más ambigüedades y una decisión expresada con un verbo de acción, por ejemplo evaluar, priorizar, investigar o reasignar.
   {: .lab-note .output .compact}
 
 {% assign results = site.data.task-results[page.slug].results %}
@@ -95,55 +103,64 @@ DESCRIPCION_DE_LA_SUBTAREA.
 
 ---
 
-## ☁️ Tarea 2. NOMBRE DE LA TAREA — ## min
+## 📊 Tarea 2. Formular la pregunta analítica — 6 min
 
-<!-- DESCRIPCION DE LA TAREA: RECOMENDADO 200-250 CARACTERES -->
-DESCRIPCION_DE_LA_TAREA.
+Convertirás la solicitud comercial en una pregunta que pueda responderse posteriormente con el dataset masivo, definiendo los componentes mínimos para que el análisis sea medible y reproducible.
 
-### Tarea 2.1. NOMBRE_DE_LA_SUBTAREA
+### Tarea 2.1. Definir los componentes analíticos
 
-<!-- DESCRIPCION DE LA SUBTAREA: RECOMENDADO 120-150 CARACTERES -->
-DESCRIPCION_DE_LA_SUBTAREA.
+Selecciona los elementos que permitirán transformar la solicitud general en una pregunta concreta y verificable con los datos disponibles.
 
-- {% include step_label.html %} DESCRIPCION_DEL_PASO_1. <!-- DESCRIPCION DEL PASO: RECOMENDADO 120 CARACTERES -->
+- {% include step_label.html %} Define una métrica principal que permita evaluar el desempeño comercial de la región Norte.
 
-  > **Nota:** NOTA_GENERAL_DEL_PASO.
-  {: .lab-note .info .compact}
-
-  ```bash
-  CODIGO_DEL_PASO_1
-  ```
-
-  > **Salida esperada:** DESCRIPCION_DE_LA_SALIDA_ESPERADA_DEL_PASO_1.
-  {: .lab-note .output .compact}
-
-- {% include step_label.html %} DESCRIPCION_DEL_PASO_2. <!-- DESCRIPCION DEL PASO: RECOMENDADO 120 CARACTERES -->
-
-  > **Importante:** CONSIDERACION_IMPORTANTE_DEL_PASO.
+  > **Importante:** Utiliza únicamente una métrica que exista en el diccionario o que pueda derivarse claramente de campos documentados.
   {: .lab-note .important .compact}
 
-  ```bash
-  CODIGO_DEL_PASO_2
-  ```
-
-  > **Salida esperada:** DESCRIPCION_DE_LA_SALIDA_ESPERADA_DEL_PASO_2.
+  > **Salida esperada:** Existe una métrica principal documentada, por ejemplo ventas netas, acompañada del nombre del campo o de una nota de validación pendiente.
   {: .lab-note .output .compact}
 
-### Tarea 2.2. NOMBRE_DE_LA_SUBTAREA
+- {% include step_label.html %} Define el periodo actual y un periodo de comparación equivalente.
 
-<!-- DESCRIPCION DE LA SUBTAREA: RECOMENDADO 120-150 CARACTERES -->
-DESCRIPCION_DE_LA_SUBTAREA.
+  > **Nota:** Evita comparar periodos parciales con periodos completos. La comparación debe permitir interpretar una variación de forma consistente.
+  {: .lab-note .info .compact}
 
-- {% include step_label.html %} DESCRIPCION_DEL_PASO_3. <!-- DESCRIPCION DEL PASO: RECOMENDADO 120 CARACTERES -->
+  > **Salida esperada:** El archivo contiene un periodo actual y un periodo comparativo claramente identificados.
+  {: .lab-note .output .compact}
 
-  > **Advertencia:** ADVERTENCIA_DEL_PASO.
+- {% include step_label.html %} Selecciona al menos tres dimensiones útiles para segmentar el análisis.
+
+  > **Nota:** Puedes considerar región, canal, categoría, producto o mes, siempre que los campos estén disponibles en el diccionario.
+  {: .lab-note .info .compact}
+
+  > **Salida esperada:** Se documentan tres o más dimensiones relacionadas con la decisión comercial.
+  {: .lab-note .output .compact}
+
+### Tarea 2.2. Redactar la pregunta y registrar una hipótesis
+
+Construye la pregunta analítica completa y separa claramente lo que deberá medirse de las explicaciones que todavía necesitan evidencia.
+
+- {% include step_label.html %} Redacta una pregunta analítica que incluya métrica, periodo, comparación, dimensiones y decisión.
+
+  > **Importante:** La pregunta debe poder responderse posteriormente mediante una consulta, una tabla o una visualización reproducible.
+  {: .lab-note .important .compact}
+
+  > **Salida esperada:** Existe una pregunta analítica completa, específica y orientada a apoyar la decisión definida en la Tarea 1.
+  {: .lab-note .output .compact}
+
+- {% include step_label.html %} Revisa la pregunta y elimina cualquier afirmación que dé por comprobada una causa o una caída.
+
+  > **Advertencia:** Expresiones como “por qué cayó”, “la región perdió ventas por” o “las promociones resolverán” introducen conclusiones que todavía no han sido demostradas.
   {: .lab-note .warning .compact}
 
-  ```bash
-  CODIGO_DEL_PASO_3
-  ```
+  > **Salida esperada:** La pregunta utiliza lenguaje descriptivo y verificable, sin afirmar causalidad.
+  {: .lab-note .output .compact}
 
-  > **Salida esperada:** DESCRIPCION_DE_LA_SALIDA_ESPERADA_DEL_PASO_3.
+- {% include step_label.html %} Registra una hipótesis inicial que pueda investigarse en prácticas posteriores.
+
+  > **Nota:** Una formulación adecuada sería: “La variación podría concentrarse en determinadas categorías o canales de la región Norte”.
+  {: .lab-note .info .compact}
+
+  > **Salida esperada:** Existe al menos una hipótesis marcada explícitamente como `Pendiente de validación`.
   {: .lab-note .output .compact}
 
 {% capture r2 %}{{ results[1] }}{% endcapture %}
@@ -153,411 +170,39 @@ DESCRIPCION_DE_LA_SUBTAREA.
 
 ---
 
-## 🚀 Tarea 3. NOMBRE DE LA TAREA — ## min
+## ✅ Tarea 3. Validar y entregar el resultado — 3 min
 
-<!-- DESCRIPCION DE LA TAREA: RECOMENDADO 200-250 CARACTERES -->
-DESCRIPCION_DE_LA_TAREA.
+Realizarás una revisión final para confirmar que la pregunta cumple los criterios mínimos de una pregunta analítica y que el archivo puede utilizarse como entrada para las actividades posteriores del curso.
 
-### Tarea 3.1. NOMBRE_DE_LA_SUBTAREA
+### Tarea 3.1. Revisar el resultado final
 
-<!-- DESCRIPCION DE LA SUBTAREA: RECOMENDADO 120-150 CARACTERES -->
-DESCRIPCION_DE_LA_SUBTAREA.
+Comprueba que tu propuesta sea medible, trazable al dataset y que mantenga una separación correcta entre evidencia, hipótesis y decisión.
 
-- {% include step_label.html %} DESCRIPCION_DEL_PASO_1. <!-- DESCRIPCION DEL PASO: RECOMENDADO 120 CARACTERES -->
+- {% include step_label.html %} Comprueba que la pregunta incluya métrica, periodo, comparación, dimensiones y una decisión explícita.
 
-  > **Nota:** NOTA_GENERAL_DEL_PASO.
-  {: .lab-note .info .compact}
-
-  ```bash
-  CODIGO_DEL_PASO_1
-  ```
-
-  > **Salida esperada:** DESCRIPCION_DE_LA_SALIDA_ESPERADA_DEL_PASO_1.
-  {: .lab-note .output .compact}
-
-- {% include step_label.html %} DESCRIPCION_DEL_PASO_2. <!-- DESCRIPCION DEL PASO: RECOMENDADO 120 CARACTERES -->
-
-  > **Importante:** CONSIDERACION_IMPORTANTE_DEL_PASO.
+  > **Importante:** Si falta alguno de estos componentes, ajusta la pregunta antes de continuar.
   {: .lab-note .important .compact}
 
-  ```bash
-  CODIGO_DEL_PASO_2
-  ```
-
-  > **Salida esperada:** DESCRIPCION_DE_LA_SALIDA_ESPERADA_DEL_PASO_2.
+  > **Salida esperada:** La pregunta cumple los cinco componentes mínimos de validación.
   {: .lab-note .output .compact}
 
-### Tarea 3.2. NOMBRE_DE_LA_SUBTAREA
+- {% include step_label.html %} Verifica que la hipótesis esté separada de la pregunta y que no se presente como un hecho confirmado.
 
-<!-- DESCRIPCION DE LA SUBTAREA: RECOMENDADO 120-150 CARACTERES -->
-DESCRIPCION_DE_LA_SUBTAREA.
-
-- {% include step_label.html %} DESCRIPCION_DEL_PASO_3. <!-- DESCRIPCION DEL PASO: RECOMENDADO 120 CARACTERES -->
-
-  > **Advertencia:** ADVERTENCIA_DEL_PASO.
+  > **Advertencia:** La hipótesis deberá contrastarse con evidencia durante las prácticas de calidad, análisis descriptivo y exploración.
   {: .lab-note .warning .compact}
 
-  ```bash
-  CODIGO_DEL_PASO_3
-  ```
+  > **Salida esperada:** La hipótesis permanece identificada como explicación posible y pendiente de validación.
+  {: .lab-note .output .compact}
 
-  > **Salida esperada:** DESCRIPCION_DE_LA_SALIDA_ESPERADA_DEL_PASO_3.
+- {% include step_label.html %} Guarda el archivo y confirma que se encuentra en `C:\DAF\Reto_01\01_reto_diagnostico_caida_ventas.xlsx`.
+
+  > **Nota:** Conserva este archivo porque la pregunta y la hipótesis podrán reutilizarse durante el análisis del dataset en Snowflake y Power BI.
+  {: .lab-note .info .compact}
+
+  > **Salida esperada:** `C:\DAF\Reto_01\01_reto_diagnostico_caida_ventas.xlsx` está guardado y listo para utilizarse como referencia posterior.
   {: .lab-note .output .compact}
 
 {% capture r3 %}{{ results[2] }}{% endcapture %}
 {% include task-result.html title="Tarea finalizada" content=r3 %}
 
 {% include support-prompt.html task="tarea3" %}
-
----
-
-<!--
-======================================================================
-GUÍA DE USO DE LA PLANTILLA DEL LABORATORIO
-======================================================================
-
-Este archivo es una plantilla base. Las 3 tareas incluidas sirven únicamente
-como referencia de estructura. La práctica final puede tener más o menos
-tareas, subtareas y pasos según lo requiera el contenido.
-
----------------------------------------------------------------------
-1. FRONT MATTER
----------------------------------------------------------------------
-
-Completa los campos de la cabecera YAML sin cambiar sus nombres:
-
-- title:
-    Nombre completo de la práctica.
-
-- duration:
-    Duración total estimada de la práctica en minutos.
-
-- objective:
-    Objetivo principal de aprendizaje de la práctica.
-
-- prerequisites:
-    Requisitos previos necesarios para realizarla.
-    Agrega o elimina elementos según corresponda.
-
-- introduction:
-    Introducción breve de la práctica. Se recomienda un solo párrafo.
-
-- final_result:
-    Resultado final esperado al terminar toda la práctica.
-    Se recomienda describirlo en un solo párrafo.
-
-- notes:
-    Consideraciones generales que apliquen a toda la práctica.
-
-- references:
-    Documentación oficial o referencias técnicas relevantes.
-    Mantén la estructura:
-
-      - text: DESCRIPCION
-        url: URL
-
-- permalink, images_base, slug y lab_number:
-    Son generados automáticamente. No deben modificarse salvo que cambie
-    deliberadamente la estructura del sitio.
-
-- prev y next:
-    Son generados automáticamente por este script para navegación entre labs.
-
----------------------------------------------------------------------
-2. ESTRUCTURA GENERAL DE UNA TAREA
----------------------------------------------------------------------
-
-Cada tarea debe seguir esta estructura:
-
-  ## ICONO Tarea N. NOMBRE DE LA TAREA — ## min
-
-  DESCRIPCION_DE_LA_TAREA.
-
-  ### Tarea N.1. NOMBRE_DE_LA_SUBTAREA
-
-  DESCRIPCION_DE_LA_SUBTAREA.
-
-  - {% include step_label.html %} DESCRIPCION_DEL_PASO.
-
-La descripción de la tarea debe explicar qué se realizará y para qué.
-Como referencia, se recomiendan aproximadamente 200-250 caracteres.
-
-La descripción de cada subtarea debe indicar claramente el objetivo de esa
-sección. Como referencia, se recomiendan aproximadamente 120-150 caracteres.
-
----------------------------------------------------------------------
-3. TAREAS
----------------------------------------------------------------------
-
-Las tareas principales se numeran de forma consecutiva:
-
-  Tarea 1
-  Tarea 2
-  Tarea 3
-  Tarea 4
-  ...
-
-La plantilla incluye solamente 3 tareas como ejemplo.
-
-Si la práctica necesita más tareas:
-
-1) Duplica COMPLETA una sección de tarea existente.
-2) Cambia el encabezado de la tarea.
-3) Cambia la numeración de todas sus subtareas.
-4) Cambia el resultado asociado results[N].
-5) Cambia el identificador de support-prompt.html.
-
-Ejemplo para una Tarea 4:
-
-  ## 🔧 Tarea 4. NOMBRE DE LA TAREA — ## min
-
-Al finalizar debe contener:
-
-  {% capture r4 %}{{ results[3] }}{% endcapture %}
-  {% include task-result.html title="Tarea finalizada" content=r4 %}
-
-  {% include support-prompt.html task="tarea4" %}
-
-IMPORTANTE:
-El arreglo results utiliza índice base 0:
-
-  Tarea 1 -> results[0]
-  Tarea 2 -> results[1]
-  Tarea 3 -> results[2]
-  Tarea 4 -> results[3]
-  Tarea 5 -> results[4]
-  Tarea 6 -> results[5]
-  Tarea N -> results[N-1]
-
----------------------------------------------------------------------
-4. SUBTAREAS
----------------------------------------------------------------------
-
-Cada tarea puede contener tantas subtareas como sea necesario.
-La numeración debe conservar la relación con la tarea principal.
-
-Ejemplo para la Tarea 4:
-
-  ### Tarea 4.1. PRIMERA SUBTAREA
-  ### Tarea 4.2. SEGUNDA SUBTAREA
-  ### Tarea 4.3. TERCERA SUBTAREA
-  ### Tarea 4.4. CUARTA SUBTAREA
-
-No existe un límite fijo de subtareas.
-
----------------------------------------------------------------------
-5. PASOS
----------------------------------------------------------------------
-
-Cada acción que debe realizar el participante debe escribirse como un paso
-independiente utilizando:
-
-  - {% include step_label.html %} DESCRIPCION_DEL_PASO.
-
-No combines varias acciones importantes dentro de un único paso cuando puedan
-realizarse o validarse por separado.
-
-Cada paso debe contener, cuando corresponda:
-
-- Una descripción clara de la acción.
-- Una Nota, Importante o Advertencia.
-- Una imagen de referencia.
-- Un bloque de código o comando.
-- Una salida esperada o criterio de validación.
-
----------------------------------------------------------------------
-6. NOTAS, IMPORTANTES Y ADVERTENCIAS
----------------------------------------------------------------------
-
-Usa los bloques obligatoriamente aportando informacion util en cada paso.
-Nota, Advertencia, Importante, Siempre ponerla debajo del texto del paso.
-Salida esperada, siempr ponerla al finalizar el paso y antes del siguiente paso.
-
-Nota informativa:
-
-  > **Nota:** TEXTO.
-  {: .lab-note .info .compact}
-
-Consideración importante:
-
-  > **Importante:** TEXTO.
-  {: .lab-note .important .compact}
-
-Advertencia:
-
-  > **Advertencia:** TEXTO.
-  {: .lab-note .warning .compact}
-
-Salida esperada:
-
-  > **Salida esperada:** TEXTO.
-  {: .lab-note .output .compact}
-
-No es obligatorio incluir los tres tipos de nota en todos los pasos.
-Utiliza solamente el que corresponda al contexto.
-
----------------------------------------------------------------------
-7. BLOQUES DE CÓDIGO
----------------------------------------------------------------------
-
-Cada comando o fragmento que el participante deba ejecutar debe tener su
-propio bloque de código.
-
-Ejemplo Bash:
-
-  ```bash
-  COMANDO
-  ```
-
-Cambia el identificador del lenguaje cuando corresponda, por ejemplo:
-
-  ```yaml
-  ```json
-  ```sql
-  ```powershell
-  ```python
-
-Evita colocar varios pasos independientes dentro de un único bloque de código
-si deben ejecutarse y validarse por separado.
-
----------------------------------------------------------------------
-8. SALIDA ESPERADA
----------------------------------------------------------------------
-
-Después de un comando o acción importante debe existir una forma clara de
-validar que el paso fue realizado correctamente.
-
-Utiliza:
-
-  > **Salida esperada:** DESCRIPCION_DE_LA_VALIDACION.
-  {: .lab-note .output .compact}
-
-La salida esperada no necesita reproducir siempre todo el texto del comando.
-Puede describir el estado, recurso, valor o comportamiento que debe observarse.
-
----------------------------------------------------------------------
-9. IMÁGENES
----------------------------------------------------------------------
-
-La carpeta de imágenes de esta práctica se encuentra en:
-
-  labs/labN/img/
-
-Para insertar una imagen mediante el mecanismo de la plantilla utiliza:
-
-  {% include step_image.html %}
-
-Conserva este include solamente en los pasos que realmente tengan una imagen.
-Si el paso no requiere imagen, elimínalo.
-
-No es necesario agregar una imagen a cada paso.
-
----------------------------------------------------------------------
-10. RESULTADO DE CADA TAREA
----------------------------------------------------------------------
-
-Cada tarea debe terminar con un resultado esperado asociado a
-_data/task-results.yml.
-
-La asignación de results debe realizarse una sola vez antes del primer uso:
-
-  {% assign results = site.data.task-results[page.slug].results %}
-
-En esta plantilla se realiza en la Tarea 1.
-No es necesario repetir el assign en las tareas siguientes.
-
-Después utiliza el índice correspondiente:
-
-  {% capture r1 %}{{ results[0] }}{% endcapture %}
-  {% include task-result.html title="Tarea finalizada" content=r1 %}
-
-Para la Tarea 2:
-
-  {% capture r2 %}{{ results[1] }}{% endcapture %}
-
-Para la Tarea 3:
-
-  {% capture r3 %}{{ results[2] }}{% endcapture %}
-
-Y así sucesivamente.
-
----------------------------------------------------------------------
-11. PROMPT DE SOPORTE
----------------------------------------------------------------------
-
-Después del resultado de cada tarea debe incluirse el prompt de soporte
-correspondiente:
-
-  {% include support-prompt.html task="tarea1" %}
-
-La numeración debe coincidir exactamente con la tarea:
-
-  Tarea 1 -> task="tarea1"
-  Tarea 2 -> task="tarea2"
-  Tarea 3 -> task="tarea3"
-  Tarea 4 -> task="tarea4"
-  ...
-
----------------------------------------------------------------------
-12. SEPARACIÓN ENTRE TAREAS
----------------------------------------------------------------------
-
-Separa cada tarea principal utilizando:
-
-  ---
-
-No utilices este separador entre pasos o subtareas de la misma tarea.
-
----------------------------------------------------------------------
-13. ICONOS DE LAS TAREAS
----------------------------------------------------------------------
-
-El icono del encabezado es visual y puede cambiarse de acuerdo con el tema de
-la tarea. Ejemplos utilizados en esta plantilla:
-
-  🔎  ☁️  🚀
-
-La numeración y el texto "Tarea N." son más importantes que el icono.
-
----------------------------------------------------------------------
-14. QUÉ SE PUEDE ELIMINAR
----------------------------------------------------------------------
-
-Si un elemento no aplica a la práctica puede eliminarse, por ejemplo:
-
-- Prerequisitos adicionales.
-- Notas generales.
-- Referencias adicionales.
-- Una Nota/Importante/Advertencia de un paso.
-- {% include step_image.html %} cuando no existe imagen.
-- Subtareas que no sean necesarias.
-- Tareas de ejemplo que no formen parte de la práctica real.
-
-No elimines los elementos estructurales necesarios para el funcionamiento del
-layout, resultados o navegación sin revisar primero su dependencia.
-
----------------------------------------------------------------------
-15. VALIDACIÓN FINAL DEL ARCHIVO
----------------------------------------------------------------------
-
-Antes de considerar terminado el laboratorio verifica:
-
-- El título y duración son correctos.
-- El objetivo describe claramente el aprendizaje esperado.
-- La introducción está completa.
-- Todas las tareas están numeradas consecutivamente.
-- Todas las subtareas corresponden al número de su tarea.
-- Cada acción del participante está separada como paso cuando corresponde.
-- Los comandos tienen bloques de código adecuados.
-- Los pasos importantes tienen una salida esperada o criterio de validación.
-- Los índices results[N] corresponden a cada número de tarea.
-- Cada tarea utiliza support-prompt.html con su número correcto.
-- Las imágenes utilizadas existen en la carpeta img de la práctica.
-- El resultado final describe lo que el participante habrá conseguido.
-- No permanecen textos de marcador como CAMBIAR_AQUI, DESCRIPCION_, NOMBRE_DE_,
-  CODIGO_, PREREQUISITO_, RESULTADO_ o ## min en la versión final.
-
-======================================================================
-FIN DE LA GUÍA DE USO DE LA PLANTILLA
-======================================================================
--->

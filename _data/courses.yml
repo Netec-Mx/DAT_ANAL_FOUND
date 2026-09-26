@@ -44,4 +44,35 @@ dafound:
       title: "NOMBRE_DE_LA_PRACTICA_7" # NOMBRE DE LA PRACTICA
       url:  "/lab7/lab7/"
       duration: "## min" # AJUSTAR TIEMPO DE LA PRACTICA
+      desc: "DESCRIPCION_CORTA_DE_LA_PRACTICA" # DESCRIPCION BREVE DE LA PRACTICA 100-120 CARACTERES    - id: lab8
+
+    - id: lab8 
+      title: "NOMBRE_DE_LA_PRACTICA_8" # NOMBRE DE LA PRACTICA
+      url:  "/lab8/lab8/"
+      duration: "## min"
       desc: "DESCRIPCION_CORTA_DE_LA_PRACTICA" # DESCRIPCION BREVE DE LA PRACTICA 100-120 CARACTERES
+
+    - id: lab9
+      title: "NOMBRE_DE_LA_PRACTICA_9" # NOMBRE DE LA PRACTICA
+      url:  "/lab9/lab9/"
+      duration: "## min"
+      desc: "DESCRIPCION_CORTA_DE_LA_PRACTICA" # DESCRIPCION BREVE DE LA PRACTICA 100-120 CARACTERES
+
+    - id: lab10
+      title: "NOMBRE_DE_LA_PRACTICA_10" # NOMBRE DE LA PRACTICA
+      url:  "/lab10/lab10/"
+      duration: "## min"
+      desc: "DESCRIPCION_CORTA_DE_LA_PRACTICA" # DESCRIPCION BREVE DE LA PRACTICA 100-120 CARACTERES
+
+    - id: lab11
+      title: "NOMBRE_DE_LA_PRACTICA_11" # NOMBRE DE LA PRACTICA
+      url:  "/lab11/lab11/"
+      duration: "## min"
+      desc: "DESCRIPCION_CORTA_DE_LA_PRACTICA" # DESCRIPCION BREVE DE LA PRACTICA 100-120 CARACTERES
+
+    - id: lab12
+      title: "NOMBRE_DE_LA_PRACTICA_12" # NOMBRE DE LA PRACTICA
+      url:  "/lab12/lab12/"
+      duration: "## min"
+      desc: "DESCRIPCION_CORTA_DE_LA_PRACTICA" # DESCRIPCION BREVE DE LA PRACTICA 100-120 CARACTERES
+
