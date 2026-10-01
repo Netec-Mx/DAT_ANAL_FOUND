@@ -7,7 +7,7 @@ duration: "25 minutos"
 objective:
   - Evaluar críticamente una conclusión ejecutiva, separar hechos, inferencias y causalidad, clasificar el nivel de sustento de cada afirmación y reescribirla de forma proporcional a la evidencia disponible.
 prerequisites:
-  - Haber completado la Práctica 6: Interpretación ejecutiva de un dashboard.
+  - Haber completado la Práctica 6; Interpretación ejecutiva de un dashboard.
   - Disponer del archivo C:\DAF\Practica_05\05_dashboard_ventas.pbix.
   - Disponer de C:\DAF\Practica_06\06_brief_interpretacion.xlsx.
   - Power BI Desktop y Microsoft Excel instalados.
@@ -28,8 +28,8 @@ notes:
 references:
   - text: Dashboard construido en la Práctica 5
     url: URL_DASHBOARD_PRACTICA_05
-prev: /lab6/lab6/
-next: /lab7/lab7/
+prev: /lab11/lab11/
+next: /lab13/lab13/
 ---
 
 ---
@@ -51,7 +51,7 @@ Separarás una conclusión compleja en afirmaciones independientes que puedan ev
 
 - {% include step_label.html %} Descarga la plantilla del reto.
 
-  [Descargar plantilla del Reto 6](URL_PLANTILLA_RETO_06)
+  [Descargar plantilla del Reto 6](https://d3gfd4cq9u8k8p.cloudfront.net/courses/DAT_ANAL_FOUND/cap6/Plantilla_Reto6_Conclusion_Enganosa.xlsx)
 
   Guarda:
 
@@ -73,7 +73,7 @@ Separarás una conclusión compleja en afirmaciones independientes que puedan ev
 
 ### Tarea 1.2. Separar la afirmación
 
-- {% include step_label.html %} Lee la conclusión propuesta:
+- {% include step_label.html %} Abre el archivo descargado `Plantilla_Reto6_Conclusion_Enganosa.xlsx`y lee la conclusión propuesta:
 
   > “La región Norte está perdiendo ventas porque el canal Online tiene demasiado descuento. Debemos reducir las promociones inmediatamente.”
 

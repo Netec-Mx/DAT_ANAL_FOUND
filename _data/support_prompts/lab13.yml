@@ -1,0 +1,156 @@
+# _data/support_prompts/lab13.yml
+# Prompts de apoyo para la Práctica 7
+# Slug del laboratorio: lab13
+
+tarea1:
+  title: "Explicar la Tarea 1 con IA"
+  prompt: >-
+    Explícame expertamente qué hice en la Tarea 1 de la
+    Práctica 7: Caso integral de desempeño comercial
+    del curso Data Analytics Foundations.
+
+    En esta tarea preparé C:\DAF\Practica_07,
+    descargué 07_caso_integral.sql y la plantilla Excel
+    del caso integral.
+
+    Después revisé el brief generado en la Práctica 6
+    para identificar una situación que todavía requiriera validación.
+
+    Definí situación observada, audiencia, decisión potencial,
+    pregunta prioritaria, periodo, métrica principal,
+    métricas complementarias, dimensiones y criterio de éxito.
+
+    También formulé dos hipótesis H1 y H2,
+    indicando qué evidencia las apoyaría,
+    qué evidencia las debilitaría
+    y qué análisis sería necesario.
+
+    Explícame cómo formular una pregunta analítica prioritaria,
+    cómo relacionarla con una decisión de negocio,
+    cómo construir hipótesis investigables,
+    qué diferencia existe entre hipótesis y conclusión
+    y qué errores comunes podrían presentarse.
+
+tarea2:
+  title: "Explicar la Tarea 2 con IA"
+  prompt: >-
+    Explícame expertamente qué hice en la Tarea 2 de la
+    Práctica 7: Caso integral de desempeño comercial
+    del curso Data Analytics Foundations.
+
+    En esta tarea ejecuté una validación rápida
+    de alcance y calidad sobre la vista curada.
+
+    Revisé filas, transacciones, clientes,
+    fecha mínima, fecha máxima
+    y distribución de QUALITYFLAG.
+
+    Después registré en Control_Calidad
+    los resultados y cuantifiqué registros VALID
+    y registros no válidos.
+
+    Finalmente clasifiqué la fuente como Conforme,
+    Observación o Revisar según periodo,
+    volumen y calidad disponibles.
+
+    Explícame por qué la calidad debe revisarse nuevamente
+    antes de un análisis integral, cómo interpretar
+    cobertura temporal, volumen y QUALITYFLAG,
+    qué diferencia existe entre Conforme, Observación y Revisar
+    y qué errores comunes podrían presentarse.
+
+tarea3:
+  title: "Explicar la Tarea 3 con IA"
+  prompt: >-
+    Explícame expertamente qué hice en la Tarea 3 de la
+    Práctica 7: Caso integral de desempeño comercial
+    del curso Data Analytics Foundations.
+
+    En esta tarea investigué el caso mediante SQL.
+
+    Primero ejecuté un análisis temporal comparando 2024 y 2025
+    mediante NetSales, NetSales YoY %, GrossMarginPct,
+    AvgTicket y Transactions.
+
+    Después analicé Channel para identificar segmentos
+    que concentraban diferencias.
+
+    Relacioné los resultados con H1 y H2,
+    clasificando evidencia como Confirmatoria,
+    No confirmatoria o Insuficiente.
+
+    Posteriormente realicé una profundización por Category
+    u otra dimensión pertinente.
+
+    Finalmente completé al menos cinco registros
+    en la Matriz_Evidencia.
+
+    Explícame cómo contrastar hipótesis mediante evidencia,
+    cómo diferenciar valor actual de contribución a una variación,
+    qué significa evidencia confirmatoria o insuficiente,
+    cómo profundizar sin cambiar simultáneamente el alcance
+    y qué errores comunes podrían presentarse.
+
+tarea4:
+  title: "Explicar la Tarea 4 con IA"
+  prompt: >-
+    Explícame expertamente qué hice en la Tarea 4 de la
+    Práctica 7: Caso integral de desempeño comercial
+    del curso Data Analytics Foundations.
+
+    En esta tarea abrí el dashboard de la Práctica 5
+    y guardé una copia como
+    C:\DAF\Practica_07\07_caso_integral.pbix.
+
+    Después apliqué los mismos filtros de periodo,
+    Region, Channel y Category utilizados en Snowflake.
+
+    Ejecuté también la plantilla de validación SQL
+    con el mismo alcance.
+
+    Comparé Ventas Netas, Margen Bruto, Margen %,
+    Transacciones, Clientes y Ticket Promedio
+    entre Snowflake y Power BI.
+
+    Los conteos debían coincidir exactamente
+    y los importes permitían únicamente diferencias
+    de redondeo cuando correspondiera.
+
+    Explícame por qué SQL y Power BI deben observar
+    exactamente la misma población, cómo validar KPI entre herramientas,
+    cómo investigar una diferencia material,
+    qué función cumple QUALITYFLAG en la comparación
+    y qué errores comunes podrían presentarse.
+
+tarea5:
+  title: "Explicar la Tarea 5 con IA"
+  prompt: >-
+    Explícame expertamente qué hice en la Tarea 5 de la
+    Práctica 7: Caso integral de desempeño comercial
+    del curso Data Analytics Foundations.
+
+    En esta tarea seleccioné los tres hallazgos
+    más útiles para la decisión.
+
+    Para cada hallazgo documenté evidencia,
+    interpretación, nivel de certeza,
+    recomendación y limitación.
+
+    Después revisé el estado final de H1 y H2
+    y las clasifiqué como Confirmatoria,
+    No confirmatoria o Insuficiente.
+
+    Redacté una conclusión ejecutiva de 100 a 120 palabras
+    explicando qué ocurrió, dónde se concentra,
+    qué evidencia lo sustenta, qué significa para la decisión,
+    qué acción conviene tomar y qué no puede afirmarse todavía.
+
+    Finalmente definí próximo paso, dato adicional necesario,
+    responsable sugerido y criterio de reevaluación,
+    y guardé SQL, Excel y PBIX del caso integral.
+
+    Explícame cómo priorizar hallazgos,
+    cómo cerrar hipótesis utilizando toda la evidencia,
+    cómo transformar análisis en recomendación ejecutiva,
+    cómo expresar limitaciones y niveles de certeza
+    y qué errores comunes podrían presentarse.

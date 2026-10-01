@@ -7,7 +7,7 @@ duration: "30 minutos"
 objective:
   - Seleccionar, calcular y justificar la métrica adecuada para responder preguntas comerciales distintas sin confundir volumen, promedio, tasa o granularidad.
 prerequisites:
-  - Haber completado la Práctica 3: Análisis descriptivo de ventas y clientes.
+  - Haber completado la Práctica 3; Análisis descriptivo de ventas y clientes.
   - Disponer de la vista DATA_ANALYTICS_FOUNDATIONS.CURATED.VENTAS_TRANSACCIONES_CURADAS_2026_1.
   - Cuenta de Snowflake activa con permisos de lectura sobre CURATED.
   - Microsoft Excel instalado.
@@ -30,8 +30,8 @@ references:
     url: https://docs.snowflake.com/en/sql-reference/functions-aggregation
   - text: Snowflake Documentation - Workspaces
     url: https://docs.snowflake.com/en/user-guide/ui-snowsight/workspaces
-prev: /lab3/lab3/
-next: /lab4/lab4/
+prev: /lab5/lab5/
+next: /lab7/lab7/
 ---
 
 ---
@@ -57,8 +57,8 @@ Crearás la carpeta del Reto 03 y conservarás los archivos de trabajo separados
 
 - {% include step_label.html %} Descarga la plantilla y el SQL del reto desde las URL proporcionadas.
 
-  1. [Descargar plantilla del Reto 3](URL_PLANTILLA_RETO_03)
-  2. [Descargar SQL del Reto 3](URL_SQL_RETO_03)
+  1. [Descargar plantilla del Reto 3](https://d3gfd4cq9u8k8p.cloudfront.net/courses/DAT_ANAL_FOUND/cap3/Plantilla_Reto3_Metrica_Correcta.xlsx)
+  2. [Descargar SQL del Reto 3](https://d3gfd4cq9u8k8p.cloudfront.net/courses/DAT_ANAL_FOUND/cap3/03_reto_metricas_correctas.sql)
 
   Guarda los archivos como:
 
@@ -115,12 +115,12 @@ Ejecutarás consultas por región y canal para observar cómo cambia la lectura 
 
 Validarás si “vender más” significa mayor venta total, mayor promedio o mayor actividad.
 
-- {% include step_label.html %} Abre `https://app.snowflake.com`, accede a **Projects > Workspaces** y abre un SQL File llamado `03_reto_metricas_correctas.sql`.
+- {% include step_label.html %} Abre `https://app.snowflake.com`, accede a **Projects > Workspaces** y crea un SQL File llamado `03_reto_metricas_correctas.sql`.
 
   > **Salida esperada:** El archivo SQL está abierto en Workspaces.
   {: .lab-note .output .compact}
 
-- {% include step_label.html %} Copia el contenido del SQL descargado y ejecuta la consulta del Caso 1 por `Region`.
+- {% include step_label.html %} Copia el contenido del SQL descargado y ejecuta la consulta del **Caso 1** por `Region`.
 
   Compara:
 
@@ -146,7 +146,7 @@ Validarás si “vender más” significa mayor venta total, mayor promedio o ma
 
 Distinguirás entre conteo bruto de devoluciones y tasa de devolución.
 
-- {% include step_label.html %} Ejecuta la consulta del Caso 2 por `Channel`.
+- {% include step_label.html %} Ejecuta la consulta del **Caso 2** por `Channel`.
 
   Compara:
 
@@ -167,7 +167,7 @@ Distinguirás entre conteo bruto de devoluciones y tasa de devolución.
   > **Salida esperada:** Se documenta la diferencia entre conteo y tasa cuando exista.
   {: .lab-note .output .compact}
 
-- {% include step_label.html %} Actualiza en `Seleccion_Metricas` la justificación del Caso 2 según la evidencia observada.
+- {% include step_label.html %} Actualiza en `Seleccion_Metricas` la justificación del **Caso 2** según la evidencia observada.
 
   > **Salida esperada:** La selección de métrica está sustentada por los resultados ejecutados.
   {: .lab-note .output .compact}
@@ -187,7 +187,7 @@ Comprobarás que una pregunta sobre frecuencia o desempeño por cliente no debe 
 
 Agruparás primero a nivel cliente para responder correctamente una pregunta de recurrencia.
 
-- {% include step_label.html %} Ejecuta la consulta del Caso 3 con `customer_frequency`.
+- {% include step_label.html %} Ejecuta la consulta del **Caso 3** con `customer_frequency`.
 
   Obtendrás:
 
@@ -202,12 +202,12 @@ Agruparás primero a nivel cliente para responder correctamente una pregunta de 
   > **Salida esperada:** Se dispone de métricas calculadas a nivel cliente.
   {: .lab-note .output .compact}
 
-- {% include step_label.html %} Registra los resultados del Caso 3 en la hoja `Resultados`.
+- {% include step_label.html %} Registra los resultados del **Caso 3** en la hoja `Resultados`.
 
   > **Importante:** La tasa de recurrencia usa clientes únicos como denominador.
   {: .lab-note .important .compact}
 
-  > **Salida esperada:** El Caso 3 muestra claramente la granularidad cliente.
+  > **Salida esperada:** El **Caso 3** muestra claramente la granularidad cliente.
   {: .lab-note .output .compact}
 
 - {% include step_label.html %} Explica por qué `COUNT(TransactionID)` no responde por sí solo a la pregunta “¿los clientes compran más veces?”.
@@ -219,7 +219,7 @@ Agruparás primero a nivel cliente para responder correctamente una pregunta de 
 
 Calcularás una métrica que incorpora explícitamente el número de clientes del canal.
 
-- {% include step_label.html %} Ejecuta la consulta del Caso 4 y compara `TOTAL_NET_SALES`, `AVG_NET_SALES` y `NET_SALES_PER_CUSTOMER`.
+- {% include step_label.html %} Ejecuta la consulta del **Caso 4** y compara `TOTAL_NET_SALES`, `AVG_NET_SALES` y `NET_SALES_PER_CUSTOMER`.
 
   > **Salida esperada:** Cada canal dispone de tres lecturas distintas del desempeño.
   {: .lab-note .output .compact}

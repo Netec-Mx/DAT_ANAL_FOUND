@@ -1,60 +1,99 @@
+# _data/task-results.yml
 
 lab1:
   results:
-    - "**Resultado esperado:** MODIFICAR AQUI EL TEXTO DE LA DESCRIPCION DEL RESULTADO ESPERADO"
-    - "**Resultado esperado:** MODIFICAR AQUI EL TEXTO DE LA DESCRIPCION DEL RESULTADO ESPERADO"
+    - "**Resultado esperado:** La solicitud de negocio está documentada con sus ambigüedades principales y una decisión comercial claramente definida."
+    - "**Resultado esperado:** La solicitud se transforma en una pregunta analítica medible con métrica, periodo, comparación, dimensiones y decisión."
+    - "**Resultado esperado:** La pregunta queda validada contra el diccionario de datos, acompañada por campos trazables y una hipótesis pendiente de validación."
 
 lab2:
   results:
-    - "**Resultado esperado:** MODIFICAR AQUI EL TEXTO DE LA DESCRIPCION DEL RESULTADO ESPERADO"
-    - "**Resultado esperado:** MODIFICAR AQUI EL TEXTO DE LA DESCRIPCION DEL RESULTADO ESPERADO"
+    - "**Resultado esperado:** La solicitud comercial queda interpretada con sus ambigüedades identificadas y la decisión que deberá apoyar el análisis."
+    - "**Resultado esperado:** Se obtiene una pregunta analítica completa, medible y neutral junto con una hipótesis inicial pendiente de validación."
+    - "**Resultado esperado:** La pregunta y la hipótesis quedan revisadas, documentadas y guardadas como referencia para análisis posteriores."
 
 lab3:
   results:
-    - "**Resultado esperado:** MODIFICAR AQUI EL TEXTO DE LA DESCRIPCION DEL RESULTADO ESPERADO"
-    - "**Resultado esperado:** MODIFICAR AQUI EL TEXTO DE LA DESCRIPCION DEL RESULTADO ESPERADO"
+    - "**Resultado esperado:** El dataset de calidad queda cargado en Snowflake como una fuente RAW independiente y sin transformaciones."
+    - "**Resultado esperado:** Se dispone de un perfil inicial con volumen, cobertura temporal, completitud y hallazgos documentados."
+    - "**Resultado esperado:** Se identifican IDs repetidos y variantes de región, canal y categoría que requieren normalización o revisión."
+    - "**Resultado esperado:** Se crea una vista CURATED que normaliza campos, conserva las filas originales y clasifica registros como VALID o REVIEW."
 
 lab4:
   results:
-    - "**Resultado esperado:** MODIFICAR AQUI EL TEXTO DE LA DESCRIPCION DEL RESULTADO ESPERADO"
-    - "**Resultado esperado:** MODIFICAR AQUI EL TEXTO DE LA DESCRIPCION DEL RESULTADO ESPERADO"
+    - "**Resultado esperado:** El archivo mensual queda descargado, organizado y cargado en Snowflake sin modificar su contenido original."
+    - "**Resultado esperado:** Los cinco controles de calidad quedan documentados con evidencia cuantitativa y un estado de cumplimiento."
+    - "**Resultado esperado:** Se emite una decisión de liberación sustentada en evidencia junto con su justificación y una acción recomendada."
 
 lab5:
   results:
-    - "**Resultado esperado:** MODIFICAR AQUI EL TEXTO DE LA DESCRIPCION DEL RESULTADO ESPERADO"
-    - "**Resultado esperado:** MODIFICAR AQUI EL TEXTO DE LA DESCRIPCION DEL RESULTADO ESPERADO"
+    - "**Resultado esperado:** La población analizada queda delimitada por registros válidos y se documentan volumen, fechas y granularidad."
+    - "**Resultado esperado:** Se calculan y registran estadísticos descriptivos y percentiles para ventas netas, cantidad y descuentos."
+    - "**Resultado esperado:** Se comparan regiones y canales y se documentan tasas comerciales utilizando denominadores consistentes."
+    - "**Resultado esperado:** Se obtienen métricas de recurrencia a nivel cliente y se validan resultados clave entre Snowflake y Excel."
 
 lab6:
   results:
-    - "**Resultado esperado:** MODIFICAR AQUI EL TEXTO DE LA DESCRIPCION DEL RESULTADO ESPERADO"
-    - "**Resultado esperado:** MODIFICAR AQUI EL TEXTO DE LA DESCRIPCION DEL RESULTADO ESPERADO"
+    - "**Resultado esperado:** Cada pregunta comercial queda asociada con una métrica principal y la granularidad adecuada antes de consultar los datos."
+    - "**Resultado esperado:** Se documentan las diferencias entre volumen, promedio y tasa mediante comparaciones por región y canal."
+    - "**Resultado esperado:** Se calculan métricas a nivel cliente y se diferencia correctamente el análisis transaccional del comportamiento por cliente."
+    - "**Resultado esperado:** Las cuatro selecciones de métricas quedan justificadas y se documenta una regla para elegir métricas según la pregunta."
 
 lab7:
   results:
-    - "**Resultado esperado:** MODIFICAR AQUI EL TEXTO DE LA DESCRIPCION DEL RESULTADO ESPERADO"
-    - "**Resultado esperado:** MODIFICAR AQUI EL TEXTO DE LA DESCRIPCION DEL RESULTADO ESPERADO"
+    - "**Resultado esperado:** La fuente de análisis y las definiciones de KPI quedan confirmadas antes de iniciar la exploración comercial."
+    - "**Resultado esperado:** Se identifica y documenta una señal temporal mediante la tendencia mensual de ventas, margen y sus variaciones."
+    - "**Resultado esperado:** Se documentan señales por región, canal y producto utilizando ventas, margen, ticket y volumen."
+    - "**Resultado esperado:** Las señales quedan validadas y se priorizan los KPI, hallazgos y visualizaciones que alimentarán el dashboard."
 
 lab8:
   results:
-    - "**Resultado esperado:** MODIFICAR AQUI EL TEXTO DE LA DESCRIPCION DEL RESULTADO ESPERADO"
-    - "**Resultado esperado:** MODIFICAR AQUI EL TEXTO DE LA DESCRIPCION DEL RESULTADO ESPERADO"
+    - "**Resultado esperado:** La investigación queda definida mediante una hipótesis inicial y criterios medibles para evaluar bajo desempeño."
+    - "**Resultado esperado:** Se determina con evidencia si Norte presenta una desviación frente a otras regiones y frente a su resultado de 2024."
+    - "**Resultado esperado:** La desviación de Norte queda descompuesta por canal y categoría para localizar los segmentos más relevantes."
+    - "**Resultado esperado:** La señal queda evaluada mediante controles de cobertura, granularidad, población y registros en revisión."
+    - "**Resultado esperado:** Se documenta una conclusión sobre Norte con evidencia cuantitativa, interpretación prudente y una acción recomendada."
 
 lab9:
   results:
-    - "**Resultado esperado:** MODIFICAR AQUI EL TEXTO DE LA DESCRIPCION DEL RESULTADO ESPERADO"
-    - "**Resultado esperado:** MODIFICAR AQUI EL TEXTO DE LA DESCRIPCION DEL RESULTADO ESPERADO"
+    - "**Resultado esperado:** Power BI queda conectado a la vista curada de Snowflake utilizando únicamente registros con QUALITYFLAG igual a VALID."
+    - "**Resultado esperado:** El modelo contiene una tabla Calendario, relación temporal activa y las medidas DAX necesarias para los KPI."
+    - "**Resultado esperado:** El dashboard presenta KPI, filtros, tendencia mensual y comparaciones por región y canal con interacción correcta."
+    - "**Resultado esperado:** Los KPI principales quedan validados contra Snowflake y se guardan el PBIX y la evidencia de validación."
 
 lab10:
   results:
-    - "**Resultado esperado:** MODIFICAR AQUI EL TEXTO DE LA DESCRIPCION DEL RESULTADO ESPERADO"
-    - "**Resultado esperado:** MODIFICAR AQUI EL TEXTO DE LA DESCRIPCION DEL RESULTADO ESPERADO"
+    - "**Resultado esperado:** Las necesidades del supervisor quedan traducidas a preguntas, KPI, filtros, visuales y decisiones concretas."
+    - "**Resultado esperado:** Se crea una copia del dashboard con una medida regional adicional y filtros adecuados para la vista del supervisor."
+    - "**Resultado esperado:** La vista regional muestra KPI y visualizaciones enfocadas en ventas, margen, canales y categorías."
+    - "**Resultado esperado:** Los KPI de Norte quedan validados contra Snowflake y el diseño regional queda justificado con evidencia."
 
 lab11:
   results:
-    - "**Resultado esperado:** MODIFICAR AQUI EL TEXTO DE LA DESCRIPCION DEL RESULTADO ESPERADO"
-    - "**Resultado esperado:** MODIFICAR AQUI EL TEXTO DE LA DESCRIPCION DEL RESULTADO ESPERADO"
+    - "**Resultado esperado:** El contexto del dashboard queda documentado con periodo, filtros, unidad y limitaciones antes de interpretar los datos."
+    - "**Resultado esperado:** Se registran seis evidencias literales y tres observaciones comparables sin introducir explicaciones causales."
+    - "**Resultado esperado:** Las afirmaciones propuestas quedan clasificadas por nivel de sustento y reescritas con lenguaje proporcional a la evidencia."
+    - "**Resultado esperado:** Se generan dos mensajes ejecutivos trazables que combinan evidencia, implicación, acción y nivel de certeza."
 
 lab12:
   results:
-    - "**Resultado esperado:** MODIFICAR AQUI EL TEXTO DE LA DESCRIPCION DEL RESULTADO ESPERADO"
-    - "**Resultado esperado:** MODIFICAR AQUI EL TEXTO DE LA DESCRIPCION DEL RESULTADO ESPERADO"
+    - "**Resultado esperado:** La conclusión propuesta queda descompuesta en cuatro afirmaciones independientes con criterios de evidencia explícitos."
+    - "**Resultado esperado:** Se documenta evidencia del dashboard para evaluar qué partes de la conclusión están respaldadas y cuáles requieren información adicional."
+    - "**Resultado esperado:** Las cuatro afirmaciones quedan clasificadas por nivel de sustento y reformuladas con lenguaje responsable."
+    - "**Resultado esperado:** Se obtiene una conclusión ejecutiva revisada con evidencia, interpretación prudente, acción reversible y nivel de certeza."
+
+lab13:
+  results:
+    - "**Resultado esperado:** El caso integral queda definido mediante una pregunta analítica prioritaria y dos hipótesis investigables."
+    - "**Resultado esperado:** Se valida que la fuente curada tenga el periodo, volumen y calidad necesarios para continuar con el análisis."
+    - "**Resultado esperado:** Las hipótesis se contrastan mediante análisis temporal, segmentación y profundización, generando una matriz de evidencia trazable."
+    - "**Resultado esperado:** Los resultados obtenidos con SQL quedan contrastados con Power BI utilizando exactamente el mismo alcance y filtros."
+    - "**Resultado esperado:** Se documentan tres hallazgos priorizados, el cierre de las hipótesis y una recomendación ejecutiva con limitaciones y próximos pasos."
+
+lab14:
+  results:
+    - "**Resultado esperado:** Se define una única decisión prioritaria para el comité con métrica, segmento, periodo y criterio de éxito."
+    - "**Resultado esperado:** El caso queda respaldado por tres evidencias trazables, comparables y directamente relacionadas con la decisión."
+    - "**Resultado esperado:** Se comparan alternativas mediante evidencia, riesgos, información faltante, factibilidad e impacto esperado."
+    - "**Resultado esperado:** Se formula una recomendación trazable con riesgo, acción inmediata, próximo paso, nivel de certeza y condición de revisión."
+    - "**Resultado esperado:** Se completa un brief ejecutivo de una página con decisión, evidencias, recomendación, riesgos y entregable final."

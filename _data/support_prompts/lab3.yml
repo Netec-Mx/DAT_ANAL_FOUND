@@ -1,87 +1,114 @@
-# Prompts de apoyo para la Práctica 3
-# El slug del laboratorio debe ser: lab3
+# _data/support_prompts/lab3.yml
+# Prompts de apoyo para la Práctica 2
+# Slug del laboratorio: lab3
 
 tarea1:
   title: "Explicar la Tarea 1 con IA"
   prompt: >-
     Explícame expertamente qué hice en la Tarea 1 de la
-    Práctica 3 de Couchbase Server.
+    Práctica 2: Preparar y validar el dataset de ventas
+    del curso Data Analytics Foundations.
 
-    CONTEXTO_DE_LA_TAREA_1_AQUI.
+    En esta tarea preparé la carpeta C:\DAF\Practica_02,
+    descargué el archivo Ventas_Retail_LATAM_2026_1_Calidad.csv
+    y lo conservé sin modificaciones como fuente original.
 
-    Explica el propósito de cada comando, configuración o procedimiento,
-    cómo interpretar las salidas esperadas, cómo validar que la tarea se
-    completó correctamente y qué errores comunes podrían presentarse.
+    También creé el archivo 02_preparacion_ventas.sql en Visual Studio Code
+    para documentar y conservar las consultas utilizadas durante la práctica.
+
+    Después accedí a Snowflake mediante Snowsight, utilicé un rol con permisos
+    administrativos y creé la base de datos y los esquemas RAW y CURATED.
+
+    Finalmente cargué el CSV en
+    DATA_ANALYTICS_FOUNDATIONS.RAW.VENTAS_TRANSACCIONES_2026_1
+    utilizando Create > Table > From File, conservando las anomalías
+    intencionales del dataset.
+
+    Explícame por qué se conserva una fuente RAW sin modificar, para qué
+    sirven los esquemas RAW y CURATED, qué función cumple el archivo SQL
+    local, cómo funciona la carga de un CSV mediante Snowsight, qué debo
+    validar después de la carga y qué errores comunes podrían presentarse.
 
 tarea2:
   title: "Explicar la Tarea 2 con IA"
   prompt: >-
     Explícame expertamente qué hice en la Tarea 2 de la
-    Práctica 3 de Couchbase Server.
+    Práctica 2: Preparar y validar el dataset de ventas
+    del curso Data Analytics Foundations.
 
-    CONTEXTO_DE_LA_TAREA_2_AQUI.
+    En esta tarea trabajé en Snowflake Workspaces con el archivo
+    02_preparacion_ventas.sql y establecí el contexto de ejecución usando
+    ACCOUNTADMIN, la base DATA_ANALYTICS_FOUNDATIONS y el esquema RAW.
 
-    Explica el propósito de cada comando, configuración o procedimiento,
-    cómo interpretar las salidas esperadas, cómo validar que la tarea se
-    completó correctamente y qué errores comunes podrían presentarse.
+    Primero ejecuté una muestra de registros para comprobar que la tabla
+    pudiera consultarse correctamente.
+
+    Después realicé un perfil inicial del dataset para obtener número de filas,
+    transacciones distintas, fecha mínima, fecha máxima y valores faltantes
+    o fuera de regla en campos críticos como TransactionID, Region, Channel,
+    Category, Quantity y DiscountPct.
+
+    Finalmente documenté tres hallazgos basados únicamente en los resultados
+    observados.
+
+    Explícame qué significa perfilar un dataset, por qué deben revisarse
+    volumen, cobertura temporal, completitud y valores fuera de regla antes
+    de transformar datos, cómo interpretar cada control, cómo diferenciar
+    un hallazgo observado de una conclusión y qué errores comunes podrían
+    presentarse durante el perfilado.
 
 tarea3:
   title: "Explicar la Tarea 3 con IA"
   prompt: >-
     Explícame expertamente qué hice en la Tarea 3 de la
-    Práctica 3 de Couchbase Server.
+    Práctica 2: Preparar y validar el dataset de ventas
+    del curso Data Analytics Foundations.
 
-    CONTEXTO_DE_LA_TAREA_3_AQUI.
+    En esta tarea investigué problemas de calidad relacionados con
+    identificadores repetidos y variantes en campos de segmentación.
 
-    Explica el propósito de cada comando, configuración o procedimiento,
-    cómo interpretar las salidas esperadas, cómo validar que la tarea se
-    completó correctamente y qué errores comunes podrían presentarse.
+    Ejecuté consultas para localizar TransactionID con más de una fila y
+    revisé una muestra de esos registros para distinguir entre repeticiones
+    exactas y registros que comparten el identificador pero contienen
+    diferencias en otros campos.
+
+    Después analicé Region, Channel y Category utilizando TRIM y UPPER
+    para detectar diferencias de espacios, mayúsculas, etiquetas o nombres
+    equivalentes que podrían fragmentar los resultados de un análisis.
+
+    Documenté que los identificadores repetidos deben marcarse para revisión
+    y no eliminarse automáticamente.
+
+    Explícame por qué un identificador repetido no demuestra por sí solo que
+    exista un duplicado, cómo identificar variantes de calidad en dimensiones
+    categóricas, para qué sirven TRIM y UPPER en este análisis, por qué es
+    riesgoso eliminar registros automáticamente y qué errores comunes podrían
+    presentarse al interpretar estos resultados.
 
 tarea4:
   title: "Explicar la Tarea 4 con IA"
   prompt: >-
     Explícame expertamente qué hice en la Tarea 4 de la
-    Práctica 3 de Couchbase Server.
+    Práctica 2: Preparar y validar el dataset de ventas
+    del curso Data Analytics Foundations.
 
-    CONTEXTO_DE_LA_TAREA_4_AQUI.
+    En esta tarea creé la vista
+    DATA_ANALYTICS_FOUNDATIONS.CURATED.VENTAS_TRANSACCIONES_CURADAS_2026_1
+    a partir de la tabla RAW.
 
-    Explica el propósito de cada comando, configuración o procedimiento,
-    cómo interpretar las salidas esperadas, cómo validar que la tarea se
-    completó correctamente y qué errores comunes podrían presentarse.
+    La vista normaliza valores de Region, Channel y Category y agrega una
+    columna QUALITYFLAG que clasifica cada registro como VALID o REVIEW
+    según condiciones de calidad relacionadas con identificadores, fechas,
+    campos faltantes, Quantity, DiscountPct y TransactionID repetidos.
 
-tarea5:
-  title: "Explicar la Tarea 5 con IA"
-  prompt: >-
-    Explícame expertamente qué hice en la Tarea 5 de la
-    Práctica 3 de Couchbase Server.
+    Después ejecuté un resumen de QUALITYFLAG, comparé el número de filas
+    entre RAW y CURATED y revisé una muestra de registros marcados como REVIEW.
 
-    CONTEXTO_DE_LA_TAREA_5_AQUI.
+    Finalmente guardé la versión final de 02_preparacion_ventas.sql
+    para conservar un proceso reproducible.
 
-    Explica el propósito de cada comando, configuración o procedimiento,
-    cómo interpretar las salidas esperadas, cómo validar que la tarea se
-    completó correctamente y qué errores comunes podrían presentarse.
-
-tarea6:
-  title: "Explicar la Tarea 6 con IA"
-  prompt: >-
-    Explícame expertamente qué hice en la Tarea 6 de la
-    Práctica 3 de Couchbase Server.
-
-    CONTEXTO_DE_LA_TAREA_6_AQUI.
-
-    Explica el propósito de cada comando, configuración o procedimiento,
-    cómo interpretar las salidas esperadas, cómo validar que la tarea se
-    completó correctamente y qué errores comunes podrían presentarse.
-
-tarea7:
-  title: "Explicar la Tarea 7 con IA"
-  prompt: >-
-    Explícame expertamente qué hice en la Tarea 7 de la
-    Práctica 3 de Couchbase Server.
-
-    CONTEXTO_DE_LA_TAREA_7_AQUI.
-
-    Explica el propósito de cada comando, configuración o procedimiento,
-    cómo interpretar las salidas esperadas, cómo validar que la tarea se
-    completó correctamente y qué errores comunes podrían presentarse.
-
+    Explícame por qué una vista CURATED puede transformar la lectura sin
+    modificar la fuente RAW, cómo funcionan las reglas de normalización,
+    qué representa QUALITYFLAG, por qué RAW_ROWS y CURATED_ROWS deben
+    coincidir en esta práctica, cómo validar que la vista quedó correctamente
+    creada y qué errores comunes podrían presentarse.

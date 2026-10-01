@@ -7,7 +7,7 @@ duration: "30 minutos"
 objective:
   - Adaptar un dashboard existente de Power BI a las necesidades de un supervisor regional, seleccionando KPI, filtros y visuales relevantes y validando la vista contra Snowflake.
 prerequisites:
-  - Haber completado la Práctica 5: Construir un dashboard básico de desempeño de ventas.
+  - Haber completado la Práctica 5; Construir un dashboard básico de desempeño de ventas.
   - Disponer del archivo C:\DAF\Practica_05\05_dashboard_ventas.pbix.
   - Power BI Desktop instalado y disponible.
   - Cuenta de Snowflake activa con acceso de lectura a DATA_ANALYTICS_FOUNDATIONS.CURATED.
@@ -31,8 +31,8 @@ references:
     url: https://learn.microsoft.com/power-bi/transform-model/desktop-tutorial-create-measures
   - text: Microsoft Learn - Slicer visual in Power BI
     url: https://learn.microsoft.com/power-bi/visuals/power-bi-visualization-slicer-visual
-prev: /lab5/lab5/
-next: /lab6/lab6/
+prev: /lab9/lab9/
+next: /lab11/lab11/
 ---
 
 ---
@@ -54,9 +54,9 @@ Antes de modificar Power BI, relacionarás las preguntas del usuario con los KPI
 
 - {% include step_label.html %} Descarga los archivos auxiliares.
 
-  1. [Descargar medida DAX adicional](URL_DAX_RETO_05)
-  2. [Descargar SQL de validación regional](URL_SQL_RETO_05)
-  3. [Descargar plantilla del Reto 5](URL_PLANTILLA_RETO_05)
+  1. [Descargar medida DAX adicional](https://d3gfd4cq9u8k8p.cloudfront.net/courses/DAT_ANAL_FOUND/cap5/05_reto_medidas_regionales.dax)
+  2. [Descargar SQL de validación regional](https://d3gfd4cq9u8k8p.cloudfront.net/courses/DAT_ANAL_FOUND/cap5/05_reto_validacion_regional.sql)
+  3. [Descargar plantilla del Reto 5](https://d3gfd4cq9u8k8p.cloudfront.net/courses/DAT_ANAL_FOUND/cap5/Plantilla_Reto5_Dashboard_Regional.xlsx)
 
   Guarda:
 

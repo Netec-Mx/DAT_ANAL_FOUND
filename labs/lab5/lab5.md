@@ -31,8 +31,8 @@ references:
     url: https://docs.snowflake.com/en/sql-reference/functions-aggregation
   - text: Snowflake Documentation - Workspaces
     url: https://docs.snowflake.com/en/user-guide/ui-snowsight/workspaces
-prev: /reto2/reto2/
-next: /reto3/reto3/
+prev: /lab4/lab4/
+next: /lab6/lab6/
 ---
 
 ---
@@ -58,8 +58,8 @@ Crearás la carpeta de la Práctica 03 y descargarás los recursos que utilizar�
 
 - {% include step_label.html %} Descarga la plantilla Excel y el archivo SQL desde las URL proporcionadas.
 
-  1. [Descargar plantilla de resultados](URL_PLANTILLA_PRACTICA_03)
-  2. [Descargar SQL de análisis descriptivo](URL_SQL_PRACTICA_03)
+  1. [Descargar plantilla de resultados](https://d3gfd4cq9u8k8p.cloudfront.net/courses/DAT_ANAL_FOUND/cap3/Plantilla_Practica3_Analisis_Descriptivo.xlsx)
+  2. [Descargar SQL de análisis descriptivo](https://d3gfd4cq9u8k8p.cloudfront.net/courses/DAT_ANAL_FOUND/cap3/03_analisis_descriptivo.sql)
 
   Guarda los archivos como:
 
@@ -75,7 +75,7 @@ Crearás la carpeta de la Práctica 03 y descargarás los recursos que utilizar�
 
 Confirmarás que el análisis se realizará sobre transacciones válidas y que los conteos tienen una unidad de análisis explícita.
 
-- {% include step_label.html %} Abre `https://app.snowflake.com`, inicia sesión y accede a **Projects > Workspaces**.
+- {% include step_label.html %} Abre `https://app.snowflake.com`, inicia sesión y accede a **Projects > Workspaces**. Crea un archivo de tipo sql llamado: `03_analisis_descriptivo.sql`.
 
   > **Nota:** Utiliza tu cuenta de Snowflake con acceso a `DATA_ANALYTICS_FOUNDATIONS.CURATED`.
   {: .lab-note .info .compact}
@@ -83,7 +83,7 @@ Confirmarás que el análisis se realizará sobre transacciones válidas y que l
   > **Salida esperada:** Se muestra Snowflake Workspaces con la sesión autenticada.
   {: .lab-note .output .compact}
 
-- {% include step_label.html %} Abre un SQL File llamado `03_analisis_descriptivo.sql`, copia el contenido del archivo descargado y ejecuta la primera consulta.
+- {% include step_label.html %} Abre el SQL File llamado `03_analisis_descriptivo.sql`, copia el contenido del archivo descargado al archivo de snowflake y ejecuta la primera consulta.
 
   La consulta obtiene:
 
@@ -122,7 +122,7 @@ Calcularás medidas de tendencia central, posición y extremos para `NetSales`, 
 
 Trabajarás con la misma población válida para que las métricas sean comparables.
 
-- {% include step_label.html %} Ejecuta la consulta de estadísticos descriptivos incluida en `03_analisis_descriptivo.sql`.
+- {% include step_label.html %} Ejecuta la consulta de **estadísticos descriptivos** incluida en `03_analisis_descriptivo.sql`.
 
   Para cada variable obtendrás:
 
@@ -229,7 +229,7 @@ Evitarás usar una única métrica para describir todos los aspectos del desempe
 
 Calcularás proporciones observadas sobre la población válida.
 
-- {% include step_label.html %} Ejecuta la consulta de tasas globales de descuento y devolución.
+- {% include step_label.html %} Ejecuta la consulta de **tasas globales** de descuento y devolución.
 
   > **Salida esperada:** Obtienes total de transacciones, tasa de descuento y tasa de devolución.
   {: .lab-note .output .compact}

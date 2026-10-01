@@ -1,0 +1,120 @@
+# _data/support_prompts/lab9.yml
+# Prompts de apoyo para la Práctica 5
+# Slug del laboratorio: lab9
+
+tarea1:
+  title: "Explicar la Tarea 1 con IA"
+  prompt: >-
+    Explícame expertamente qué hice en la Tarea 1 de la
+    Práctica 5: Construir un dashboard básico de desempeño de ventas
+    del curso Data Analytics Foundations.
+
+    En esta tarea preparé la carpeta C:\DAF\Practica_05,
+    descargué los archivos auxiliares de medidas DAX, validación SQL
+    y plantilla Excel, y creé el archivo 05_dashboard_ventas.pbix.
+
+    Después conecté Power BI Desktop directamente a Snowflake usando
+    la vista DATA_ANALYTICS_FOUNDATIONS.CURATED.VENTAS_TRANSACCIONES_CURADAS_2026_1.
+
+    En Power Query renombré la consulta como Ventas Curadas,
+    filtré QUALITYFLAG para conservar únicamente VALID y confirmé
+    tipos de datos adecuados para fechas, identificadores, cantidades,
+    importes y dimensiones.
+
+    Finalmente apliqué las transformaciones para cargar la tabla
+    Ventas Curadas al modelo.
+
+    Explícame cómo funciona la conexión de Power BI con Snowflake,
+    por qué se utiliza la fuente CURATED, para qué sirve filtrar
+    QUALITYFLAG = VALID, por qué los tipos de datos son importantes,
+    cómo validar que la conexión quedó correctamente configurada
+    y qué errores comunes podrían presentarse.
+
+tarea2:
+  title: "Explicar la Tarea 2 con IA"
+  prompt: >-
+    Explícame expertamente qué hice en la Tarea 2 de la
+    Práctica 5: Construir un dashboard básico de desempeño de ventas
+    del curso Data Analytics Foundations.
+
+    En esta tarea construí el modelo temporal y las medidas DAX
+    necesarias para el dashboard.
+
+    Creé una tabla Calendario mediante DAX con fechas de 2024 a 2025
+    y columnas Year, MonthNumber, Month, YearMonth y YearMonthOrder.
+
+    Configuré el orden cronológico de Month y YearMonth y creé
+    una relación activa 1:* entre Calendario[Date] y
+    Ventas Curadas[TRANSACTIONDATE].
+
+    También marqué Calendario como tabla de fechas.
+
+    Después creé medidas como Ventas Netas, Margen Bruto,
+    Margen %, Transacciones, Clientes Únicos y Ticket Promedio,
+    y configuré formatos apropiados de moneda, porcentaje
+    y números enteros.
+
+    Explícame por qué se utiliza una tabla calendario,
+    cómo funciona una relación 1:*, qué significa marcar una tabla
+    como tabla de fechas, cómo funcionan las medidas DAX creadas,
+    por qué conviene utilizar medidas en lugar de cálculos manuales,
+    cómo validar el modelo y qué errores comunes podrían presentarse.
+
+tarea3:
+  title: "Explicar la Tarea 3 con IA"
+  prompt: >-
+    Explícame expertamente qué hice en la Tarea 3 de la
+    Práctica 5: Construir un dashboard básico de desempeño de ventas
+    del curso Data Analytics Foundations.
+
+    En esta tarea construí una página de dashboard llamada
+    Desempeño de ventas en formato 16:9.
+
+    Agregué slicers para Date, Region y Channel.
+
+    Después creé tarjetas para Ventas Netas, Margen Bruto,
+    Margen % y Ticket Promedio.
+
+    También construí un gráfico de líneas con la evolución mensual
+    de ventas netas, un gráfico de barras por región y otro
+    gráfico de barras por canal.
+
+    Finalmente comprobé que los slicers modificaran correctamente
+    todos los KPI y visualizaciones.
+
+    Explícame por qué se seleccionaron estas visualizaciones,
+    qué función cumplen los slicers, cómo funcionan las interacciones
+    entre filtros y visuales, cómo interpretar correctamente
+    tarjetas, tendencias y comparaciones, cómo validar que el dashboard
+    responde a los filtros y qué errores comunes podrían presentarse.
+
+tarea4:
+  title: "Explicar la Tarea 4 con IA"
+  prompt: >-
+    Explícame expertamente qué hice en la Tarea 4 de la
+    Práctica 5: Construir un dashboard básico de desempeño de ventas
+    del curso Data Analytics Foundations.
+
+    En esta tarea validé los KPI del dashboard contra Snowflake.
+
+    Primero eliminé filtros de Region y Channel y configuré
+    el periodo completo de 2024-01-01 a 2025-12-31.
+
+    Registré en Excel los valores de Ventas Netas, Margen Bruto,
+    Margen %, Transacciones, Clientes Únicos y Ticket Promedio
+    obtenidos desde Power BI.
+
+    Después ejecuté la consulta equivalente en Snowflake
+    y comparé ambas fuentes.
+
+    Para conteos exigí coincidencia exacta y para importes utilicé
+    una tolerancia máxima de redondeo de 0.01.
+
+    Finalmente marqué los controles como Conforme o Investigar
+    y guardé el PBIX y la evidencia de validación.
+
+    Explícame por qué es importante validar Power BI contra Snowflake,
+    cómo asegurar que ambas herramientas utilizan los mismos filtros,
+    cómo interpretar diferencias por redondeo, qué revisar cuando
+    una métrica no coincide, cómo validar que el dashboard es confiable
+    y qué errores comunes podrían presentarse.

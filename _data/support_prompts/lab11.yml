@@ -1,0 +1,109 @@
+# _data/support_prompts/lab11.yml
+# Prompts de apoyo para la Práctica 6
+# Slug del laboratorio: lab11
+
+tarea1:
+  title: "Explicar la Tarea 1 con IA"
+  prompt: >-
+    Explícame expertamente qué hice en la Tarea 1 de la
+    Práctica 6: Interpretación ejecutiva de un dashboard
+    del curso Data Analytics Foundations.
+
+    En esta tarea preparé la carpeta C:\DAF\Practica_06,
+    descargué la plantilla de interpretación y abrí
+    05_dashboard_ventas.pbix sin modificar el modelo ni las medidas.
+
+    Después registré el contexto del dashboard:
+    periodo, región, canal, categoría, moneda o unidad
+    y filtros activos.
+
+    Cuando algún elemento no podía confirmarse,
+    lo documenté explícitamente como una limitación.
+
+    Explícame por qué el contexto debe registrarse antes
+    de interpretar un KPI, cómo afectan los filtros a un resultado,
+    por qué no debo asumir una moneda o periodo no visible,
+    cómo documentar correctamente una limitación
+    y qué errores comunes podrían presentarse.
+
+tarea2:
+  title: "Explicar la Tarea 2 con IA"
+  prompt: >-
+    Explícame expertamente qué hice en la Tarea 2 de la
+    Práctica 6: Interpretación ejecutiva de un dashboard
+    del curso Data Analytics Foundations.
+
+    En esta tarea registré seis evidencias literales del dashboard:
+    dos KPI, dos valores temporales y dos valores por segmento.
+
+    Para cada evidencia documenté visual, métrica,
+    valor literal, periodo o segmento y filtros.
+
+    Después transformé esas evidencias en tres observaciones
+    comparables, revisando periodo, escala, filtros,
+    granularidad y denominador.
+
+    Cuando dos valores no podían compararse correctamente,
+    los marqué como No comparable y documenté la razón.
+
+    Explícame la diferencia entre evidencia y observación,
+    qué requisitos debe cumplir una comparación válida,
+    por qué granularidad y denominador son importantes,
+    cómo detectar una comparación inválida y qué errores
+    comunes podrían presentarse.
+
+tarea3:
+  title: "Explicar la Tarea 3 con IA"
+  prompt: >-
+    Explícame expertamente qué hice en la Tarea 3 de la
+    Práctica 6: Interpretación ejecutiva de un dashboard
+    del curso Data Analytics Foundations.
+
+    En esta tarea evalué tres afirmaciones:
+    que Norte tiene el peor desempeño,
+    que Online causó la caída de ventas
+    y que la categoría con menor margen debería eliminarse.
+
+    Clasifiqué cada afirmación como Sustentada,
+    Parcialmente sustentada o No sustentada
+    utilizando únicamente la evidencia visible.
+
+    Después reescribí las afirmaciones utilizando lenguaje
+    proporcional al nivel de evidencia y agregué
+    una limitación explícita.
+
+    Explícame cómo distinguir evidencia, inferencia y causalidad,
+    qué significa que una afirmación esté parcial o no sustentada,
+    por qué No sustentada no significa necesariamente falsa,
+    cómo corregir lenguaje causal no demostrado
+    y qué errores comunes podrían presentarse.
+
+tarea4:
+  title: "Explicar la Tarea 4 con IA"
+  prompt: >-
+    Explícame expertamente qué hice en la Tarea 4 de la
+    Práctica 6: Interpretación ejecutiva de un dashboard
+    del curso Data Analytics Foundations.
+
+    En esta tarea convertí la evidencia registrada
+    en dos mensajes ejecutivos de 40 a 60 palabras.
+
+    El primer mensaje resumió el desempeño general
+    y el segundo se enfocó en una región, canal
+    o categoría relevante.
+
+    Cada mensaje incluyó Evidencia, Implicación,
+    Acción y Certeza.
+
+    No introduje cifras nuevas ni afirmaciones causales
+    que no estuvieran respaldadas por los datos.
+
+    Finalmente guardé el brief como
+    C:\DAF\Practica_06\06_brief_interpretacion.xlsx
+    y cerré Power BI sin guardar cambios en el PBIX.
+
+    Explícame cómo transformar evidencia en comunicación ejecutiva,
+    cómo diferenciar implicación de causalidad,
+    cómo seleccionar una acción proporcional a la certeza,
+    por qué el mensaje debe ser trazable
+    y qué errores comunes podrían presentarse.

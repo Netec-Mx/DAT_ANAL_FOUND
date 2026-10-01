@@ -1,87 +1,123 @@
-# Prompts de apoyo para la Práctica 7
-# El slug del laboratorio debe ser: lab7
+# _data/support_prompts/lab7.yml
+# Prompts de apoyo para la Práctica 4
+# Slug del laboratorio: lab7
 
 tarea1:
   title: "Explicar la Tarea 1 con IA"
   prompt: >-
     Explícame expertamente qué hice en la Tarea 1 de la
-    Práctica 7 de Couchbase Server.
+    Práctica 4: Exploración del desempeño comercial
+    del curso Data Analytics Foundations.
 
-    CONTEXTO_DE_LA_TAREA_1_AQUI.
+    En esta tarea preparé la carpeta C:\DAF\Practica_04
+    y descargué la plantilla Excel y el archivo
+    04_exploracion_desempeno.sql.
 
-    Explica el propósito de cada comando, configuración o procedimiento,
-    cómo interpretar las salidas esperadas, cómo validar que la tarea se
-    completó correctamente y qué errores comunes podrían presentarse.
+    Después trabajé con la vista
+    DATA_ANALYTICS_FOUNDATIONS.CURATED.VENTAS_TRANSACCIONES_CURADAS_2026_1
+    utilizando únicamente registros con QUALITYFLAG = 'VALID'.
+
+    Antes de explorar tendencias confirmé las definiciones de los KPI
+    que utilizaría durante la práctica.
+
+    Entre ellos revisé NetSales, GrossMargin, GrossMarginPct,
+    AvgTicket, Transactions, Customers y Units.
+
+    Para GrossMarginPct utilicé la relación
+    SUM(GrossMargin) / SUM(NetSales), y para AvgTicket utilicé
+    SUM(NetSales) / COUNT(DISTINCT TransactionID).
+
+    Registré las definiciones en la plantilla para mantener consistencia
+    durante todo el análisis.
+
+    Explícame por qué es importante definir los KPI antes de explorar
+    datos, cómo funcionan GrossMarginPct y AvgTicket, por qué debe
+    mantenerse una definición consistente durante todas las comparaciones,
+    cómo validar que los KPI están correctamente definidos y qué errores
+    comunes podrían presentarse.
 
 tarea2:
   title: "Explicar la Tarea 2 con IA"
   prompt: >-
     Explícame expertamente qué hice en la Tarea 2 de la
-    Práctica 7 de Couchbase Server.
+    Práctica 4: Exploración del desempeño comercial
+    del curso Data Analytics Foundations.
 
-    CONTEXTO_DE_LA_TAREA_2_AQUI.
+    En esta tarea analicé la evolución mensual del desempeño comercial
+    utilizando Snowflake.
 
-    Explica el propósito de cada comando, configuración o procedimiento,
-    cómo interpretar las salidas esperadas, cómo validar que la tarea se
-    completó correctamente y qué errores comunes podrían presentarse.
+    Ejecuté una consulta con aproximadamente 24 meses de información
+    y revisé métricas como NetSales, GrossMargin, Units, Customers,
+    AvgTicket y variaciones entre periodos.
+
+    Identifiqué los meses con la mayor disminución y el mayor crecimiento
+    de NetSales y comparé si GrossMargin, AvgTicket y otras métricas
+    se movían en la misma dirección.
+
+    Después documenté una primera señal comercial, S1,
+    indicando métrica, periodo, evidencia, estado y limitación.
+
+    Explícame cómo analizar correctamente una tendencia temporal,
+    qué significa comparar variaciones entre meses o periodos,
+    por qué una caída en NetSales no implica necesariamente una caída
+    equivalente en margen o ticket, cómo documentar una señal comercial
+    sin convertirla en causalidad y qué errores comunes podrían presentarse.
 
 tarea3:
   title: "Explicar la Tarea 3 con IA"
   prompt: >-
     Explícame expertamente qué hice en la Tarea 3 de la
-    Práctica 7 de Couchbase Server.
+    Práctica 4: Exploración del desempeño comercial
+    del curso Data Analytics Foundations.
 
-    CONTEXTO_DE_LA_TAREA_3_AQUI.
+    En esta tarea profundicé el análisis mediante comparaciones
+    por Region, Channel y producto.
 
-    Explica el propósito de cada comando, configuración o procedimiento,
-    cómo interpretar las salidas esperadas, cómo validar que la tarea se
-    completó correctamente y qué errores comunes podrían presentarse.
+    Para Region y Channel revisé métricas como NetSales,
+    GrossMarginPct y AvgTicket y busqué segmentos cuya interpretación
+    cambiara dependiendo del KPI utilizado.
+
+    Con estos resultados documenté una segunda señal comercial, S2.
+
+    Después ejecuté un resumen por producto para identificar productos
+    con alto volumen y bajo margen y registré una tercera señal, S3.
+
+    Evité atribuir automáticamente un margen bajo a descuentos,
+    costos, precios u otras causas que no hubieran sido medidas.
+
+    Explícame por qué un segmento puede verse fuerte según ventas
+    pero débil según margen o ticket, cómo diferenciar volumen
+    de rentabilidad, qué significa identificar un producto de alto
+    volumen y bajo margen, por qué una señal no demuestra una causa
+    y qué errores comunes podrían presentarse.
 
 tarea4:
   title: "Explicar la Tarea 4 con IA"
   prompt: >-
     Explícame expertamente qué hice en la Tarea 4 de la
-    Práctica 7 de Couchbase Server.
+    Práctica 4: Exploración del desempeño comercial
+    del curso Data Analytics Foundations.
 
-    CONTEXTO_DE_LA_TAREA_4_AQUI.
+    En esta tarea validé las señales comerciales S1, S2 y S3
+    antes de utilizarlas como entrada para un dashboard.
 
-    Explica el propósito de cada comando, configuración o procedimiento,
-    cómo interpretar las salidas esperadas, cómo validar que la tarea se
-    completó correctamente y qué errores comunes podrían presentarse.
+    Revisé cobertura temporal y consistencia de los datos y clasifiqué
+    cada señal como Validada o Revisar según la evidencia disponible.
 
-tarea5:
-  title: "Explicar la Tarea 5 con IA"
-  prompt: >-
-    Explícame expertamente qué hice en la Tarea 5 de la
-    Práctica 7 de Couchbase Server.
+    Después completé la hoja Dashboard_Input y asigné prioridades
+    Alta, Media o Baja a los KPI, señales y elementos que podrían
+    incorporarse al dashboard de Power BI.
 
-    CONTEXTO_DE_LA_TAREA_5_AQUI.
+    Finalmente seleccioné dos hallazgos principales y definí
+    qué visualización y qué filtros o slicers ayudarían a comunicar
+    cada uno.
 
-    Explica el propósito de cada comando, configuración o procedimiento,
-    cómo interpretar las salidas esperadas, cómo validar que la tarea se
-    completó correctamente y qué errores comunes podrían presentarse.
+    Guardé 04_exploracion_desempeno.xlsx y
+    04_exploracion_desempeno.sql para reutilizarlos en la Práctica 5.
 
-tarea6:
-  title: "Explicar la Tarea 6 con IA"
-  prompt: >-
-    Explícame expertamente qué hice en la Tarea 6 de la
-    Práctica 7 de Couchbase Server.
-
-    CONTEXTO_DE_LA_TAREA_6_AQUI.
-
-    Explica el propósito de cada comando, configuración o procedimiento,
-    cómo interpretar las salidas esperadas, cómo validar que la tarea se
-    completó correctamente y qué errores comunes podrían presentarse.
-
-tarea7:
-  title: "Explicar la Tarea 7 con IA"
-  prompt: >-
-    Explícame expertamente qué hice en la Tarea 7 de la
-    Práctica 7 de Couchbase Server.
-
-    CONTEXTO_DE_LA_TAREA_7_AQUI.
-
-    Explica el propósito de cada comando, configuración o procedimiento,
-    cómo interpretar las salidas esperadas, cómo validar que la tarea se
-    completó correctamente y qué errores comunes podrían presentarse.
-
+    Explícame cómo validar una señal antes de comunicarla,
+    qué diferencia existe entre una señal Validada y una que requiere
+    revisión, cómo priorizar información para un dashboard,
+    cómo relacionar un hallazgo con una visualización adecuada,
+    cómo validar que los archivos finales están completos
+    y qué errores comunes podrían presentarse.

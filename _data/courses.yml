@@ -1,78 +1,91 @@
 # _data/courses.yml
+
 dafound:
-  title: "Data Analytics Foundations" # COLOCAR EL NOMBRE DEL CURSO
-  intro: "DESCRIPCIÓN_DEL_CURSO_AQUI"
+  title: "Data Analytics Foundations"
+  intro: "Curso práctico para desarrollar fundamentos de analítica de datos, desde la formulación de preguntas y calidad de datos hasta dashboards y recomendaciones ejecutivas."
+
   labs:
 
-    - id: lab1 
-      title: "NOMBRE_DE_LA_PRACTICA_1" # NOMBRE DE LA PRACTICA
-      url:  "/lab1/lab1/"
-      duration: "## min" # AJUSTAR TIEMPO DE LA PRACTICA
-      desc: "DESCRIPCION_CORTA_DE_LA_PRACTICA" # DESCRIPCION BREVE DE LA PRACTICA 100-120 CARACTERES
+    - id: lab1
+      title: "Práctica 1: Convertir solicitudes operativas en preguntas analíticas"
+      url: "/lab1/lab1/"
+      duration: "25 min"
+      desc: "Transforma solicitudes de negocio en preguntas analíticas medibles, trazables y orientadas a decisiones."
 
-    - id: lab2 
-      title: "NOMBRE_DE_LA_PRACTICA_2" # NOMBRE DE LA PRACTICA
-      url:  "/lab2/lab2/"
-      duration: "## min" # AJUSTAR TIEMPO DE LA PRACTICA
-      desc: "DESCRIPCION_CORTA_DE_LA_PRACTICA" # DESCRIPCION BREVE DE LA PRACTICA 100-120 CARACTERES
+    - id: lab2
+      title: "Reto 1: Diagnóstico de una caída de ventas"
+      url: "/lab2/lab2/"
+      duration: "13 min"
+      desc: "Formula una pregunta analítica para investigar una posible caída de ventas sin asumir causas previamente."
 
-    - id: lab3 
-      title: "NOMBRE_DE_LA_PRACTICA_3" # NOMBRE DE LA PRACTICA
-      url:  "/lab3/lab3/"
-      duration: "## min" # AJUSTAR TIEMPO DE LA PRACTICA
-      desc: "DESCRIPCION_CORTA_DE_LA_PRACTICA" # DESCRIPCION BREVE DE LA PRACTICA 100-120 CARACTERES
+    - id: lab3
+      title: "Práctica 2: Preparar y validar el dataset de ventas"
+      url: "/lab3/lab3/"
+      duration: "33 min"
+      desc: "Perfila datos de ventas, detecta problemas de calidad y crea una vista curada y trazable en Snowflake."
 
-    - id: lab4 
-      title: "NOMBRE_DE_LA_PRACTICA_4" # NOMBRE DE LA PRACTICA
-      url:  "/lab4/lab4/"
-      duration: "## min" # AJUSTAR TIEMPO DE LA PRACTICA
-      desc: "DESCRIPCION_CORTA_DE_LA_PRACTICA" # DESCRIPCION BREVE DE LA PRACTICA 100-120 CARACTERES
+    - id: lab4
+      title: "Reto 2: Liberación o revisión de un archivo mensual"
+      url: "/lab4/lab4/"
+      duration: "15 min"
+      desc: "Evalúa controles de calidad de un archivo mensual y decide su liberación con evidencia reproducible."
 
-    - id: lab5 
-      title: "NOMBRE_DE_LA_PRACTICA_5" # NOMBRE DE LA PRACTICA
-      url:  "/lab5/lab5/"
-      duration: "## min" # AJUSTAR TIEMPO DE LA PRACTICA
-      desc: "DESCRIPCION_CORTA_DE_LA_PRACTICA" # DESCRIPCION BREVE DE LA PRACTICA 100-120 CARACTERES
+    - id: lab5
+      title: "Práctica 3: Análisis descriptivo de ventas y clientes"
+      url: "/lab5/lab5/"
+      duration: "30 min"
+      desc: "Calcula métricas descriptivas de ventas y clientes diferenciando correctamente transacciones y clientes."
 
-    - id: lab6 
-      title: "NOMBRE_DE_LA_PRACTICA_6" # NOMBRE DE LA PRACTICA
-      url:  "/lab6/lab6/"
-      duration: "## min" # AJUSTAR TIEMPO DE LA PRACTICA
-      desc: "DESCRIPCION_CORTA_DE_LA_PRACTICA" # DESCRIPCION BREVE DE LA PRACTICA 100-120 CARACTERES
+    - id: lab6
+      title: "Reto 3: Elegir la métrica correcta"
+      url: "/lab6/lab6/"
+      duration: "30 min"
+      desc: "Selecciona y justifica métricas de volumen, promedio, tasa y cliente según distintas preguntas comerciales."
 
-    - id: lab7 
-      title: "NOMBRE_DE_LA_PRACTICA_7" # NOMBRE DE LA PRACTICA
-      url:  "/lab7/lab7/"
-      duration: "## min" # AJUSTAR TIEMPO DE LA PRACTICA
-      desc: "DESCRIPCION_CORTA_DE_LA_PRACTICA" # DESCRIPCION BREVE DE LA PRACTICA 100-120 CARACTERES    - id: lab8
+    - id: lab7
+      title: "Práctica 4: Exploración del desempeño comercial"
+      url: "/lab7/lab7/"
+      duration: "33 min"
+      desc: "Explora tendencias, segmentos y margen para validar señales comerciales y preparar insumos de dashboard."
 
-    - id: lab8 
-      title: "NOMBRE_DE_LA_PRACTICA_8" # NOMBRE DE LA PRACTICA
-      url:  "/lab8/lab8/"
-      duration: "## min"
-      desc: "DESCRIPCION_CORTA_DE_LA_PRACTICA" # DESCRIPCION BREVE DE LA PRACTICA 100-120 CARACTERES
+    - id: lab8
+      title: "Reto 4: Investigar una región de bajo desempeño"
+      url: "/lab8/lab8/"
+      duration: "35 min"
+      desc: "Investiga si una región presenta bajo desempeño y localiza segmentos que concentran la desviación observada."
 
     - id: lab9
-      title: "NOMBRE_DE_LA_PRACTICA_9" # NOMBRE DE LA PRACTICA
-      url:  "/lab9/lab9/"
-      duration: "## min"
-      desc: "DESCRIPCION_CORTA_DE_LA_PRACTICA" # DESCRIPCION BREVE DE LA PRACTICA 100-120 CARACTERES
+      title: "Práctica 5: Construir un dashboard básico de desempeño de ventas"
+      url: "/lab9/lab9/"
+      duration: "35 min"
+      desc: "Construye en Power BI un dashboard de ventas con KPI, filtros, tendencias y validación contra Snowflake."
 
     - id: lab10
-      title: "NOMBRE_DE_LA_PRACTICA_10" # NOMBRE DE LA PRACTICA
-      url:  "/lab10/lab10/"
-      duration: "## min"
-      desc: "DESCRIPCION_CORTA_DE_LA_PRACTICA" # DESCRIPCION BREVE DE LA PRACTICA 100-120 CARACTERES
+      title: "Reto 5: Dashboard para un supervisor regional"
+      url: "/lab10/lab10/"
+      duration: "30 min"
+      desc: "Adapta un dashboard de Power BI para un supervisor regional con KPI, filtros y visuales relevantes."
 
     - id: lab11
-      title: "NOMBRE_DE_LA_PRACTICA_11" # NOMBRE DE LA PRACTICA
-      url:  "/lab11/lab11/"
-      duration: "## min"
-      desc: "DESCRIPCION_CORTA_DE_LA_PRACTICA" # DESCRIPCION BREVE DE LA PRACTICA 100-120 CARACTERES
+      title: "Práctica 6: Interpretación ejecutiva de un dashboard"
+      url: "/lab11/lab11/"
+      duration: "20 min"
+      desc: "Interpreta un dashboard distinguiendo evidencia, observaciones e inferencias para comunicar resultados ejecutivos."
 
     - id: lab12
-      title: "NOMBRE_DE_LA_PRACTICA_12" # NOMBRE DE LA PRACTICA
-      url:  "/lab12/lab12/"
-      duration: "## min"
-      desc: "DESCRIPCION_CORTA_DE_LA_PRACTICA" # DESCRIPCION BREVE DE LA PRACTICA 100-120 CARACTERES
+      title: "Reto 6: Cuestionar una conclusión engañosa"
+      url: "/lab12/lab12/"
+      duration: "25 min"
+      desc: "Evalúa críticamente una conclusión ejecutiva y corrige afirmaciones que exceden la evidencia disponible."
 
+    - id: lab13
+      title: "Práctica 7: Caso integral de desempeño comercial"
+      url: "/lab13/lab13/"
+      duration: "60 min"
+      desc: "Resuelve un caso comercial integral con Snowflake, Power BI, hipótesis, evidencia y recomendación ejecutiva."
+
+    - id: lab14
+      title: "Reto 7: Recomendación al comité de operaciones"
+      url: "/lab14/lab14/"
+      duration: "45 min"
+      desc: "Convierte la evidencia del caso integral en una recomendación ejecutiva con alternativas, riesgos y próximos pasos."

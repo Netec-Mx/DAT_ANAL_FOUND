@@ -1,0 +1,112 @@
+# _data/support_prompts/lab10.yml
+# Prompts de apoyo para el Reto 5
+# Slug del laboratorio: lab10
+
+tarea1:
+  title: "Explicar la Tarea 1 con IA"
+  prompt: >-
+    Explícame expertamente qué hice en la Tarea 1 del
+    Reto 5: Dashboard para un supervisor regional
+    del curso Data Analytics Foundations.
+
+    En esta tarea preparé la carpeta C:\DAF\Reto_05
+    y descargué la medida DAX adicional, el SQL de validación
+    regional y la plantilla Excel del reto.
+
+    Después analicé cuatro preguntas del supervisor:
+    cómo va mi región, qué canal contribuye más,
+    dónde está cayendo el margen y qué categoría requiere atención.
+
+    Para cada pregunta definí un KPI, una visualización,
+    un filtro y la decisión que debía apoyar.
+
+    Explícame cómo traducir una necesidad de usuario en requisitos
+    analíticos, cómo relacionar pregunta, KPI, visual, filtro
+    y decisión, por qué no deben elegirse visualizaciones solo
+    por estética, cómo validar que cada requisito está bien definido
+    y qué errores comunes podrían presentarse.
+
+tarea2:
+  title: "Explicar la Tarea 2 con IA"
+  prompt: >-
+    Explícame expertamente qué hice en la Tarea 2 del
+    Reto 5: Dashboard para un supervisor regional
+    del curso Data Analytics Foundations.
+
+    En esta tarea abrí el PBIX creado en la Práctica 5
+    y guardé una copia independiente como
+    C:\DAF\Reto_05\05_reto_dashboard_regional.pbix.
+
+    Después creé la medida Margen por Transacción utilizando
+    DIVIDE([Margen Bruto], [Transacciones], 0).
+
+    También mantuve o agregué slicers de Fecha, Región,
+    Canal y Categoría.
+
+    Configuré NORTE como región inicial sin bloquear el filtro,
+    de forma que el dashboard pudiera reutilizarse con otras regiones.
+
+    Explícame por qué se trabaja sobre una copia del PBIX,
+    qué representa Margen por Transacción, cómo funcionan los slicers,
+    por qué Norte debe ser solo una selección inicial,
+    cómo validar los filtros y qué errores comunes podrían presentarse.
+
+tarea3:
+  title: "Explicar la Tarea 3 con IA"
+  prompt: >-
+    Explícame expertamente qué hice en la Tarea 3 del
+    Reto 5: Dashboard para un supervisor regional
+    del curso Data Analytics Foundations.
+
+    En esta tarea adapté el dashboard para crear una vista
+    enfocada en las necesidades del supervisor regional.
+
+    Conservé cuatro KPI principales:
+    Ventas Netas, Margen %, Ticket Promedio
+    y Margen por Transacción.
+
+    También mantuve la tendencia mensual de ventas,
+    configuré un gráfico de barras por Channel
+    y otro gráfico por Category utilizando Margen %.
+
+    Las categorías fueron ordenadas de menor a mayor margen
+    para facilitar la identificación de segmentos que requieren atención.
+
+    Finalmente probé el cambio de región y confirmé
+    que todos los visuales respondieran correctamente.
+
+    Explícame cómo simplificar un dashboard según su audiencia,
+    por qué estos KPI son relevantes para un supervisor,
+    cómo interpretar ventas por canal y margen por categoría,
+    por qué menor volumen no significa necesariamente peor desempeño,
+    cómo validar las interacciones y qué errores comunes podrían presentarse.
+
+tarea4:
+  title: "Explicar la Tarea 4 con IA"
+  prompt: >-
+    Explícame expertamente qué hice en la Tarea 4 del
+    Reto 5: Dashboard para un supervisor regional
+    del curso Data Analytics Foundations.
+
+    En esta tarea validé la vista regional utilizando
+    Region = NORTE.
+
+    Registré Ventas Netas, Margen %, Transacciones,
+    Ticket Promedio y Margen por Transacción desde Power BI
+    y ejecuté la consulta equivalente en Snowflake.
+
+    Después realicé una prueba adicional seleccionando
+    un mes de 2025 para comprobar que los filtros temporales
+    produjeran resultados equivalentes.
+
+    También documenté el KPI más importante, visual más útil,
+    filtro más importante, elementos eliminados, mejora obtenida,
+    hallazgo principal y limitación del dashboard.
+
+    Finalmente guardé el PBIX y el archivo Excel del reto.
+
+    Explícame cómo validar una vista regional,
+    por qué debe utilizarse exactamente el mismo alcance en Power BI
+    y Snowflake, cómo interpretar diferencias entre resultados,
+    cómo justificar decisiones de diseño de un dashboard
+    y qué errores comunes podrían presentarse.

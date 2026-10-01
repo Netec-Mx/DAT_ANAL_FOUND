@@ -1,87 +1,117 @@
-# Prompts de apoyo para la Práctica 6
-# El slug del laboratorio debe ser: lab6
+# _data/support_prompts/lab6.yml
+# Prompts de apoyo para el Reto 3
+# Slug del laboratorio: lab6
 
 tarea1:
   title: "Explicar la Tarea 1 con IA"
   prompt: >-
-    Explícame expertamente qué hice en la Tarea 1 de la
-    Práctica 6 de Couchbase Server.
+    Explícame expertamente qué hice en la Tarea 1 del
+    Reto 3: Elegir la métrica correcta
+    del curso Data Analytics Foundations.
 
-    CONTEXTO_DE_LA_TAREA_1_AQUI.
+    En esta tarea preparé la carpeta C:\DAF\Reto_03
+    y descargué la plantilla y el archivo SQL del reto.
 
-    Explica el propósito de cada comando, configuración o procedimiento,
-    cómo interpretar las salidas esperadas, cómo validar que la tarea se
-    completó correctamente y qué errores comunes podrían presentarse.
+    Después revisé cuatro preguntas comerciales distintas y,
+    antes de ejecutar consultas, seleccioné para cada una una
+    métrica principal y la granularidad adecuada.
+
+    Consideré métricas como SUM(NetSales), AVG(NetSales),
+    COUNT(TransactionID), COUNT(DISTINCT CustomerID),
+    tasa de devolución, frecuencia por cliente y venta neta por cliente.
+
+    El objetivo fue decidir primero qué métrica responde realmente
+    a cada pregunta y evitar ejecutar análisis sin tener claro
+    qué se quiere medir.
+
+    Explícame por qué una métrica técnicamente válida puede responder
+    una pregunta distinta, cómo relacionar pregunta de negocio,
+    métrica y granularidad, por qué conviene definir la métrica antes
+    de consultar los datos, cómo validar que la selección es coherente
+    y qué errores comunes podrían presentarse.
 
 tarea2:
   title: "Explicar la Tarea 2 con IA"
   prompt: >-
-    Explícame expertamente qué hice en la Tarea 2 de la
-    Práctica 6 de Couchbase Server.
+    Explícame expertamente qué hice en la Tarea 2 del
+    Reto 3: Elegir la métrica correcta
+    del curso Data Analytics Foundations.
 
-    CONTEXTO_DE_LA_TAREA_2_AQUI.
+    En esta tarea ejecuté comparaciones por Region y Channel
+    para observar cómo cambia la interpretación según la métrica utilizada.
 
-    Explica el propósito de cada comando, configuración o procedimiento,
-    cómo interpretar las salidas esperadas, cómo validar que la tarea se
-    completó correctamente y qué errores comunes podrían presentarse.
+    Por Region comparé transacciones, clientes únicos,
+    venta neta total y venta neta promedio.
+
+    Después identifiqué la región con mayor SUM(NetSales)
+    y la región con mayor AVG(NetSales) para comprobar que ambas
+    métricas pueden producir lecturas diferentes sin que exista
+    una contradicción.
+
+    Por Channel comparé transacciones, número de devoluciones
+    y tasa de devolución.
+
+    También identifiqué el canal con mayor número de devoluciones
+    y el canal con mayor tasa de devolución.
+
+    Explícame la diferencia entre volumen, promedio y tasa,
+    por qué el segmento con mayor valor absoluto puede no tener
+    la mayor tasa, cómo interpretar correctamente un denominador,
+    por qué distintas métricas pueden producir rankings diferentes
+    y qué errores comunes podrían presentarse.
 
 tarea3:
   title: "Explicar la Tarea 3 con IA"
   prompt: >-
-    Explícame expertamente qué hice en la Tarea 3 de la
-    Práctica 6 de Couchbase Server.
+    Explícame expertamente qué hice en la Tarea 3 del
+    Reto 3: Elegir la métrica correcta
+    del curso Data Analytics Foundations.
 
-    CONTEXTO_DE_LA_TAREA_3_AQUI.
+    En esta tarea cambié la granularidad del análisis de transacción
+    a cliente.
 
-    Explica el propósito de cada comando, configuración o procedimiento,
-    cómo interpretar las salidas esperadas, cómo validar que la tarea se
-    completó correctamente y qué errores comunes podrían presentarse.
+    Ejecuté customer_frequency para obtener número de clientes,
+    frecuencia promedio, frecuencia mediana, clientes recurrentes
+    y tasa de clientes recurrentes.
+
+    Revisé por qué COUNT(TransactionID) no responde por sí solo
+    a la pregunta de si los clientes compran más veces,
+    ya que primero es necesario agrupar las transacciones por CustomerID.
+
+    Después comparé TOTAL_NET_SALES, AVG_NET_SALES
+    y NET_SALES_PER_CUSTOMER por canal para distinguir
+    volumen total, promedio transaccional y resultado por cliente.
+
+    Explícame por qué la unidad de análisis cambia la interpretación,
+    cómo funciona una agregación a nivel cliente, por qué una métrica
+    transaccional puede ser insuficiente para responder preguntas
+    sobre comportamiento de clientes, cómo interpretar
+    NET_SALES_PER_CUSTOMER y qué errores comunes podrían presentarse.
 
 tarea4:
   title: "Explicar la Tarea 4 con IA"
   prompt: >-
-    Explícame expertamente qué hice en la Tarea 4 de la
-    Práctica 6 de Couchbase Server.
+    Explícame expertamente qué hice en la Tarea 4 del
+    Reto 3: Elegir la métrica correcta
+    del curso Data Analytics Foundations.
 
-    CONTEXTO_DE_LA_TAREA_4_AQUI.
+    En esta tarea revisé las cuatro selecciones iniciales de métricas
+    después de observar los resultados.
 
-    Explica el propósito de cada comando, configuración o procedimiento,
-    cómo interpretar las salidas esperadas, cómo validar que la tarea se
-    completó correctamente y qué errores comunes podrían presentarse.
+    Marqué cada caso como Justificado o Revisar y corregí cualquier
+    selección cuya métrica no respondiera exactamente a la pregunta
+    de negocio.
 
-tarea5:
-  title: "Explicar la Tarea 5 con IA"
-  prompt: >-
-    Explícame expertamente qué hice en la Tarea 5 de la
-    Práctica 6 de Couchbase Server.
+    Después identifiqué el caso donde más cambió la interpretación
+    al utilizar métricas diferentes y redacté una regla general:
+    antes de comparar segmentos debo definir si la pregunta busca
+    volumen, valor promedio, proporción o comportamiento por cliente.
 
-    CONTEXTO_DE_LA_TAREA_5_AQUI.
+    Finalmente guardé el archivo como
+    C:\DAF\Reto_03\03_reto_metricas_correctas.xlsx.
 
-    Explica el propósito de cada comando, configuración o procedimiento,
-    cómo interpretar las salidas esperadas, cómo validar que la tarea se
-    completó correctamente y qué errores comunes podrían presentarse.
-
-tarea6:
-  title: "Explicar la Tarea 6 con IA"
-  prompt: >-
-    Explícame expertamente qué hice en la Tarea 6 de la
-    Práctica 6 de Couchbase Server.
-
-    CONTEXTO_DE_LA_TAREA_6_AQUI.
-
-    Explica el propósito de cada comando, configuración o procedimiento,
-    cómo interpretar las salidas esperadas, cómo validar que la tarea se
-    completó correctamente y qué errores comunes podrían presentarse.
-
-tarea7:
-  title: "Explicar la Tarea 7 con IA"
-  prompt: >-
-    Explícame expertamente qué hice en la Tarea 7 de la
-    Práctica 6 de Couchbase Server.
-
-    CONTEXTO_DE_LA_TAREA_7_AQUI.
-
-    Explica el propósito de cada comando, configuración o procedimiento,
-    cómo interpretar las salidas esperadas, cómo validar que la tarea se
-    completó correctamente y qué errores comunes podrían presentarse.
-
+    Explícame por qué es válido cambiar una métrica después de revisar
+    evidencia, cómo validar que una métrica responde realmente
+    a la pregunta de negocio, cómo relacionar métrica con granularidad,
+    por qué una regla de decisión ayuda en análisis posteriores
+    y qué errores comunes podrían presentarse.

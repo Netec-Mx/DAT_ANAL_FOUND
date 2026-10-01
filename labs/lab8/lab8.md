@@ -7,7 +7,7 @@ duration: "35 minutos"
 objective:
   - Investigar de forma autónoma si una región presenta bajo desempeño, localizar dónde se concentra la desviación y formular una recomendación sustentada en evidencia.
 prerequisites:
-  - Haber completado la Práctica 4: Exploración del desempeño comercial.
+  - Haber completado la Práctica 4; Exploración del desempeño comercial.
   - Disponer de la vista DATA_ANALYTICS_FOUNDATIONS.CURATED.VENTAS_TRANSACCIONES_CURADAS_2026_1.
   - Cuenta de Snowflake activa con permisos de lectura sobre CURATED.
   - Microsoft Excel instalado.
@@ -30,8 +30,8 @@ references:
     url: https://docs.snowflake.com/en/sql-reference/functions-analytic
   - text: Snowflake Documentation - Workspaces
     url: https://docs.snowflake.com/en/user-guide/ui-snowsight/workspaces
-prev: /lab4/lab4/
-next: /lab5/lab5/
+prev: /lab7/lab7/
+next: /lab9/lab9/
 ---
 
 ---
@@ -55,8 +55,8 @@ Prepararás los archivos y definirás qué significa bajo desempeño antes de co
 
 - {% include step_label.html %} Descarga la plantilla y el SQL del reto.
 
-  1. [Descargar plantilla del Reto 4](URL_PLANTILLA_RETO_04)
-  2. [Descargar SQL del Reto 4](URL_SQL_RETO_04)
+  1. [Descargar plantilla del Reto 4](https://d3gfd4cq9u8k8p.cloudfront.net/courses/DAT_ANAL_FOUND/cap4/Plantilla_Reto4_Region_Bajo_Desempeno.xlsx)
+  2. [Descargar SQL del Reto 4](https://d3gfd4cq9u8k8p.cloudfront.net/courses/DAT_ANAL_FOUND/cap4/04_reto_region_bajo_desempeno.sql)
 
   Guarda los archivos como:
 
@@ -109,10 +109,12 @@ Compararás Norte frente al resto de regiones y frente a su propio resultado de 
 
 ### Tarea 2.1. Comparar regiones
 
-- {% include step_label.html %} Abre `https://app.snowflake.com`, entra a **Projects > Workspaces** y abre `04_reto_region_bajo_desempeno.sql`.
+- {% include step_label.html %} Abre `https://app.snowflake.com`, entra a **Projects > Workspaces** y crea el archivo `04_reto_region_bajo_desempeno.sql`.
 
   > **Salida esperada:** El archivo SQL está listo para ejecutarse en Snowflake.
   {: .lab-note .output .compact}
+
+- {% include step_label.html %} Abre el archivo descargado `04_reto_region_bajo_desempeno.sql` y copia el contenido al archivo de snowflake. 
 
 - {% include step_label.html %} Ejecuta la consulta regional 2024 vs 2025.
 

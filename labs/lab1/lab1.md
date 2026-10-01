@@ -57,9 +57,9 @@ Crearás la estructura central del curso, descargarás los archivos requeridos d
 
 - {% include step_label.html %} Descarga los tres archivos requeridos desde las URL proporcionadas y guárdalos en las rutas indicadas.
 
-  1. [Descargar diccionario de datos](URL_DICCIONARIO_DATOS)
-  2. [Descargar plantilla de la Práctica 1](URL_PLANTILLA_PRACTICA_01)
-  3. [Descargar muestra de ventas](URL_MUESTRA_VENTAS)
+  1. [Descargar diccionario de datos](https://d3gfd4cq9u8k8p.cloudfront.net/courses/DAT_ANAL_FOUND/cap1/Diccionario_Datos_Ventas_Retail_LATAM_2026_1.xlsx)
+  2. [Descargar plantilla de la Práctica 1](https://d3gfd4cq9u8k8p.cloudfront.net/courses/DAT_ANAL_FOUND/cap1/Plantilla_Pregunta_Analitica.xlsx)
+  3. [Descargar muestra de ventas](https://d3gfd4cq9u8k8p.cloudfront.net/courses/DAT_ANAL_FOUND/cap1/Muestra_Ventas_Retail_LATAM_2026_1.csv)
 
   Guarda los archivos exactamente en:
 
@@ -93,7 +93,7 @@ Crearás la estructura central del curso, descargarás los archivos requeridos d
 
 Analizarás la solicitud del liderazgo para separar la necesidad de negocio de los elementos que todavía deben definirse antes de medirla.
 
-- {% include step_label.html %} Registra en la plantilla la solicitud: “Necesitamos entender si realmente existe una caída en las ventas y dónde se concentra antes de decidir dónde intervenir”.
+- {% include step_label.html %} Registra en la plantilla la solicitud: **“Necesitamos entender si realmente existe una caída en las ventas y dónde se concentra antes de decidir dónde intervenir”**.
 
   > **Nota:** El dataset del caso contiene entre 500,000 y 1,000,000 de transacciones y dispone de versiones equivalentes para Excel, Snowflake y Power BI.
   {: .lab-note .info .compact}

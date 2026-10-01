@@ -1,87 +1,82 @@
+# _data/support_prompts/lab1.yml
 # Prompts de apoyo para la Práctica 1
-# El slug del laboratorio debe ser: lab1
+# Slug del laboratorio: lab1
 
 tarea1:
   title: "Explicar la Tarea 1 con IA"
   prompt: >-
     Explícame expertamente qué hice en la Tarea 1 de la
-    Práctica 1 de Couchbase Server.
+    Práctica 1: Convertir solicitudes operativas en preguntas analíticas
+    del curso Data Analytics Foundations.
 
-    CONTEXTO_DE_LA_TAREA_1_AQUI.
+    En esta tarea preparé la estructura de trabajo del curso en C:\DAF,
+    descargué el diccionario de datos, la plantilla de la práctica y la
+    muestra de ventas, y abrí los recursos necesarios en Excel.
 
-    Explica el propósito de cada comando, configuración o procedimiento,
-    cómo interpretar las salidas esperadas, cómo validar que la tarea se
-    completó correctamente y qué errores comunes podrían presentarse.
+    Después analicé la solicitud del liderazgo comercial:
+    “Necesitamos entender si realmente existe una caída en las ventas
+    y dónde se concentra antes de decidir dónde intervenir”.
+
+    Identifiqué elementos faltantes o ambiguos como la métrica, el periodo,
+    la comparación, las dimensiones y la decisión que debe apoyar el análisis.
+    Finalmente definí una decisión comercial concreta sin redactar todavía
+    una conclusión sobre los datos.
+
+    Explícame por qué es importante separar una solicitud de negocio de una
+    pregunta analítica, para qué sirve identificar ambigüedades antes de
+    analizar datos, cómo intervienen la métrica, el periodo, la comparación,
+    las dimensiones y la decisión, cómo validar que la tarea se completó
+    correctamente y qué errores conceptuales podrían presentarse.
 
 tarea2:
   title: "Explicar la Tarea 2 con IA"
   prompt: >-
     Explícame expertamente qué hice en la Tarea 2 de la
-    Práctica 1 de Couchbase Server.
+    Práctica 1: Convertir solicitudes operativas en preguntas analíticas
+    del curso Data Analytics Foundations.
 
-    CONTEXTO_DE_LA_TAREA_2_AQUI.
+    En esta tarea seleccioné los componentes analíticos necesarios para
+    transformar la solicitud del negocio en una pregunta medible.
 
-    Explica el propósito de cada comando, configuración o procedimiento,
-    cómo interpretar las salidas esperadas, cómo validar que la tarea se
-    completó correctamente y qué errores comunes podrían presentarse.
+    Definí una métrica principal, un periodo actual, un periodo de comparación
+    equivalente y las dimensiones necesarias para localizar dónde se concentra
+    una posible variación.
+
+    Después redacté una pregunta analítica que integra métrica, periodo,
+    comparación, dimensiones y la decisión que debe apoyar. Finalmente revisé
+    la redacción para eliminar términos ambiguos y cualquier afirmación causal
+    que todavía no estuviera sustentada por evidencia.
+
+    Explícame la función de cada componente de una pregunta analítica,
+    por qué los periodos deben ser comparables, cómo seleccionar dimensiones
+    útiles, por qué una pregunta debe ser medible y neutral, cuál es la
+    diferencia entre describir una variación y afirmar una causa, cómo validar
+    que la pregunta quedó correctamente formulada y qué errores comunes
+    podrían presentarse.
 
 tarea3:
   title: "Explicar la Tarea 3 con IA"
   prompt: >-
     Explícame expertamente qué hice en la Tarea 3 de la
-    Práctica 1 de Couchbase Server.
+    Práctica 1: Convertir solicitudes operativas en preguntas analíticas
+    del curso Data Analytics Foundations.
 
-    CONTEXTO_DE_LA_TAREA_3_AQUI.
+    En esta tarea validé que la pregunta analítica pudiera responderse con el
+    dataset disponible. Consulté el diccionario de datos para confirmar los
+    nombres exactos de los campos relacionados con las métricas y dimensiones
+    seleccionadas.
 
-    Explica el propósito de cada comando, configuración o procedimiento,
-    cómo interpretar las salidas esperadas, cómo validar que la tarea se
-    completó correctamente y qué errores comunes podrían presentarse.
+    También comprobé que la pregunta pudiera convertirse posteriormente en
+    una tabla, una consulta SQL en Snowflake o una visualización en Power BI,
+    sin necesidad de construirlas todavía.
 
-tarea4:
-  title: "Explicar la Tarea 4 con IA"
-  prompt: >-
-    Explícame expertamente qué hice en la Tarea 4 de la
-    Práctica 1 de Couchbase Server.
+    Después registré una hipótesis inicial relacionada con la variación de
+    ventas y la marqué como pendiente de validación. Finalmente completé la
+    ficha analítica con la solicitud, decisión, métrica, periodos, dimensiones,
+    pregunta, campos e hipótesis y guardé el entregable final.
 
-    CONTEXTO_DE_LA_TAREA_4_AQUI.
-
-    Explica el propósito de cada comando, configuración o procedimiento,
-    cómo interpretar las salidas esperadas, cómo validar que la tarea se
-    completó correctamente y qué errores comunes podrían presentarse.
-
-tarea5:
-  title: "Explicar la Tarea 5 con IA"
-  prompt: >-
-    Explícame expertamente qué hice en la Tarea 5 de la
-    Práctica 1 de Couchbase Server.
-
-    CONTEXTO_DE_LA_TAREA_5_AQUI.
-
-    Explica el propósito de cada comando, configuración o procedimiento,
-    cómo interpretar las salidas esperadas, cómo validar que la tarea se
-    completó correctamente y qué errores comunes podrían presentarse.
-
-tarea6:
-  title: "Explicar la Tarea 6 con IA"
-  prompt: >-
-    Explícame expertamente qué hice en la Tarea 6 de la
-    Práctica 1 de Couchbase Server.
-
-    CONTEXTO_DE_LA_TAREA_6_AQUI.
-
-    Explica el propósito de cada comando, configuración o procedimiento,
-    cómo interpretar las salidas esperadas, cómo validar que la tarea se
-    completó correctamente y qué errores comunes podrían presentarse.
-
-tarea7:
-  title: "Explicar la Tarea 7 con IA"
-  prompt: >-
-    Explícame expertamente qué hice en la Tarea 7 de la
-    Práctica 1 de Couchbase Server.
-
-    CONTEXTO_DE_LA_TAREA_7_AQUI.
-
-    Explica el propósito de cada comando, configuración o procedimiento,
-    cómo interpretar las salidas esperadas, cómo validar que la tarea se
-    completó correctamente y qué errores comunes podrían presentarse.
-
+    Explícame qué significa que una pregunta sea trazable al dataset,
+    por qué deben utilizarse los nombres exactos del diccionario de datos,
+    cómo determinar si una pregunta es técnicamente medible, cuál es la
+    diferencia entre una hipótesis y un hallazgo confirmado, cómo validar que
+    la ficha analítica está completa y qué errores comunes podrían presentarse.

@@ -7,7 +7,7 @@ duration: "15 minutos"
 objective:
   - Evaluar de forma autónoma la calidad de un archivo mensual de ventas y emitir una decisión de liberación sustentada en evidencia.
 prerequisites:
-  - Haber completado la Práctica 2: Preparar y validar el dataset de ventas.
+  - Haber completado la Práctica 2; Preparar y validar el dataset de ventas.
   - Cuenta de Snowflake activa con permisos para crear y consultar tablas en DATA_ANALYTICS_FOUNDATIONS.RAW.
   - Microsoft Excel instalado.
   - Acceso a Internet para descargar los archivos del reto.
@@ -28,8 +28,8 @@ references:
     url: https://docs.snowflake.com/en/user-guide/ui-snowsight/workspaces
   - text: Snowflake Documentation - Load data using Snowsight
     url: https://docs.snowflake.com/en/user-guide/data-load-web-ui
-prev: /lab2/lab2/
-next: /lab3/lab3/
+prev: /lab3/lab3/
+next: /lab5/lab5/
 ---
 
 ---
@@ -55,9 +55,9 @@ Prepararás la carpeta del reto y conservarás el dataset original separado de l
 
 - {% include step_label.html %} Descarga los tres archivos del reto desde las URL proporcionadas.
 
-  1. [Descargar archivo mensual](URL_DATASET_RETO_02)
-  2. [Descargar plantilla del reto](URL_PLANTILLA_RETO_02)
-  3. [Descargar SQL del reto](URL_SQL_RETO_02)
+  1. [Descargar archivo mensual](https://d3gfd4cq9u8k8p.cloudfront.net/courses/DAT_ANAL_FOUND/cap2/Ventas_Retail_LATAM_2025_12_Mensual.csv)
+  2. [Descargar plantilla del reto](https://d3gfd4cq9u8k8p.cloudfront.net/courses/DAT_ANAL_FOUND/cap2/Plantilla_Reto2_Liberacion.xlsx)
+  3. [Descargar SQL del reto](https://d3gfd4cq9u8k8p.cloudfront.net/courses/DAT_ANAL_FOUND/cap2/02_reto_liberacion_archivo_mensual.sql)
 
   Guarda los archivos como:
 
@@ -87,18 +87,18 @@ Crearás una tabla independiente para evaluar el lote mensual sin afectar la tab
 
 - {% include step_label.html %} Selecciona **Create > Table > From File** y carga el archivo mensual como `VENTAS_MENSUALES_2025_12`.
 
+  Selecciona:
+
+  ```text
+  C:\DAF\00_recursos\Ventas_Retail_LATAM_2025_12_Mensual.csv
+  ```
+
   Configura:
 
   ```text
   Database: DATA_ANALYTICS_FOUNDATIONS
   Schema: RAW
   Table: VENTAS_MENSUALES_2025_12
-  ```
-
-  Selecciona:
-
-  ```text
-  C:\DAF\00_recursos\Ventas_Retail_LATAM_2025_12_Mensual.csv
   ```
 
   Revisa el esquema inferido y selecciona **Load**.

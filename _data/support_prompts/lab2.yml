@@ -1,87 +1,83 @@
-# Prompts de apoyo para la Práctica 2
-# El slug del laboratorio debe ser: lab2
+# _data/support_prompts/lab2.yml
+# Prompts de apoyo para el Reto 1
+# Slug del laboratorio: lab2
 
 tarea1:
   title: "Explicar la Tarea 1 con IA"
   prompt: >-
-    Explícame expertamente qué hice en la Tarea 1 de la
-    Práctica 2 de Couchbase Server.
+    Explícame expertamente qué hice en la Tarea 1 del
+    Reto 1: Diagnóstico de una caída de ventas
+    del curso Data Analytics Foundations.
 
-    CONTEXTO_DE_LA_TAREA_1_AQUI.
+    En esta tarea preparé la carpeta C:\DAF\Reto_01,
+    reutilicé los recursos compartidos disponibles en C:\DAF\00_recursos
+    y descargué la plantilla específica del reto.
 
-    Explica el propósito de cada comando, configuración o procedimiento,
-    cómo interpretar las salidas esperadas, cómo validar que la tarea se
-    completó correctamente y qué errores comunes podrían presentarse.
+    Después analicé una solicitud del liderazgo comercial que indicaba que
+    la región Norte podría estar perdiendo desempeño y que se proponía
+    aumentar promociones antes de contar con evidencia suficiente.
+
+    Registré la solicitud sin modificarla, identifiqué al menos tres
+    ambigüedades relacionadas con métrica, periodo, comparación, dimensiones
+    o alcance regional, y definí una decisión concreta que el análisis
+    debería apoyar.
+
+    Explícame por qué es importante no asumir que existe una caída antes de
+    revisar evidencia, cómo detectar ambigüedades en una solicitud comercial,
+    cómo separar la interpretación previa del liderazgo de los hechos
+    observables, cómo formular una decisión analítica concreta, cómo validar
+    que la tarea se completó correctamente y qué errores comunes podrían
+    presentarse.
 
 tarea2:
   title: "Explicar la Tarea 2 con IA"
   prompt: >-
-    Explícame expertamente qué hice en la Tarea 2 de la
-    Práctica 2 de Couchbase Server.
+    Explícame expertamente qué hice en la Tarea 2 del
+    Reto 1: Diagnóstico de una caída de ventas
+    del curso Data Analytics Foundations.
 
-    CONTEXTO_DE_LA_TAREA_2_AQUI.
+    En esta tarea definí los componentes analíticos necesarios para investigar
+    el desempeño de la región Norte.
 
-    Explica el propósito de cada comando, configuración o procedimiento,
-    cómo interpretar las salidas esperadas, cómo validar que la tarea se
-    completó correctamente y qué errores comunes podrían presentarse.
+    Seleccioné una métrica principal respaldada por el diccionario de datos,
+    definí un periodo actual y un periodo de comparación equivalente y elegí
+    al menos tres dimensiones útiles para segmentar el análisis, como región,
+    canal, categoría, producto o mes cuando estuvieran disponibles.
+
+    Después redacté una pregunta analítica que integra métrica, periodo,
+    comparación, dimensiones y decisión. Revisé la pregunta para eliminar
+    afirmaciones que dieran por comprobada una caída o una causa y registré
+    una hipótesis inicial marcada como pendiente de validación.
+
+    Explícame cómo seleccionar una métrica adecuada, por qué los periodos
+    comparados deben ser equivalentes, cómo elegir dimensiones útiles, cómo
+    distinguir una pregunta analítica de una conclusión anticipada, cuál es
+    la diferencia entre una hipótesis y un hecho confirmado, cómo validar que
+    la pregunta puede responderse con datos y qué errores comunes podrían
+    presentarse.
 
 tarea3:
   title: "Explicar la Tarea 3 con IA"
   prompt: >-
-    Explícame expertamente qué hice en la Tarea 3 de la
-    Práctica 2 de Couchbase Server.
+    Explícame expertamente qué hice en la Tarea 3 del
+    Reto 1: Diagnóstico de una caída de ventas
+    del curso Data Analytics Foundations.
 
-    CONTEXTO_DE_LA_TAREA_3_AQUI.
+    En esta tarea realicé la revisión final de la pregunta analítica y de la
+    hipótesis formulada durante el reto.
 
-    Explica el propósito de cada comando, configuración o procedimiento,
-    cómo interpretar las salidas esperadas, cómo validar que la tarea se
-    completó correctamente y qué errores comunes podrían presentarse.
+    Comprobé que la pregunta incluyera una métrica, un periodo, una comparación,
+    dimensiones y una decisión explícita. También verifiqué que la hipótesis
+    estuviera separada de la pregunta y que no se presentara como un hecho
+    confirmado.
 
-tarea4:
-  title: "Explicar la Tarea 4 con IA"
-  prompt: >-
-    Explícame expertamente qué hice en la Tarea 4 de la
-    Práctica 2 de Couchbase Server.
+    Finalmente guardé el entregable como
+    C:\DAF\Reto_01\01_reto_diagnostico_caida_ventas.xlsx
+    para reutilizarlo como referencia en actividades posteriores con
+    Snowflake y Power BI.
 
-    CONTEXTO_DE_LA_TAREA_4_AQUI.
-
-    Explica el propósito de cada comando, configuración o procedimiento,
-    cómo interpretar las salidas esperadas, cómo validar que la tarea se
-    completó correctamente y qué errores comunes podrían presentarse.
-
-tarea5:
-  title: "Explicar la Tarea 5 con IA"
-  prompt: >-
-    Explícame expertamente qué hice en la Tarea 5 de la
-    Práctica 2 de Couchbase Server.
-
-    CONTEXTO_DE_LA_TAREA_5_AQUI.
-
-    Explica el propósito de cada comando, configuración o procedimiento,
-    cómo interpretar las salidas esperadas, cómo validar que la tarea se
-    completó correctamente y qué errores comunes podrían presentarse.
-
-tarea6:
-  title: "Explicar la Tarea 6 con IA"
-  prompt: >-
-    Explícame expertamente qué hice en la Tarea 6 de la
-    Práctica 2 de Couchbase Server.
-
-    CONTEXTO_DE_LA_TAREA_6_AQUI.
-
-    Explica el propósito de cada comando, configuración o procedimiento,
-    cómo interpretar las salidas esperadas, cómo validar que la tarea se
-    completó correctamente y qué errores comunes podrían presentarse.
-
-tarea7:
-  title: "Explicar la Tarea 7 con IA"
-  prompt: >-
-    Explícame expertamente qué hice en la Tarea 7 de la
-    Práctica 2 de Couchbase Server.
-
-    CONTEXTO_DE_LA_TAREA_7_AQUI.
-
-    Explica el propósito de cada comando, configuración o procedimiento,
-    cómo interpretar las salidas esperadas, cómo validar que la tarea se
-    completó correctamente y qué errores comunes podrían presentarse.
-
+    Explícame por qué una pregunta analítica debe contener esos componentes,
+    cómo comprobar su trazabilidad y coherencia, por qué la hipótesis debe
+    mantenerse separada de la evidencia confirmada, cómo validar que el archivo
+    final está completo y listo para reutilizarse y qué errores comunes
+    podrían presentarse.

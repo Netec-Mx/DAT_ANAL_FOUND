@@ -1,0 +1,115 @@
+# _data/support_prompts/lab12.yml
+# Prompts de apoyo para el Reto 6
+# Slug del laboratorio: lab12
+
+tarea1:
+  title: "Explicar la Tarea 1 con IA"
+  prompt: >-
+    Explícame expertamente qué hice en la Tarea 1 del
+    Reto 6: Cuestionar una conclusión engañosa
+    del curso Data Analytics Foundations.
+
+    En esta tarea preparé la carpeta C:\DAF\Reto_06,
+    descargué la plantilla del reto y abrí el dashboard
+    de la Práctica 5 como fuente de evidencia.
+
+    Después descompuse la conclusión:
+    “La región Norte está perdiendo ventas porque el canal Online
+    tiene demasiado descuento. Debemos reducir las promociones inmediatamente”.
+
+    La separé en cuatro afirmaciones:
+    Norte está perdiendo ventas,
+    Online concentra la caída,
+    el descuento causó la caída
+    y reducir promociones resolverá el problema.
+
+    También definí qué evidencia sería necesaria para demostrar
+    cada afirmación.
+
+    Explícame por qué una conclusión compleja debe dividirse
+    en afirmaciones verificables, cómo diferenciar hechos potenciales,
+    causalidad y recomendación, cómo definir criterios de evidencia
+    y qué errores comunes podrían presentarse.
+
+tarea2:
+  title: "Explicar la Tarea 2 con IA"
+  prompt: >-
+    Explícame expertamente qué hice en la Tarea 2 del
+    Reto 6: Cuestionar una conclusión engañosa
+    del curso Data Analytics Foundations.
+
+    En esta tarea busqué evidencia en el dashboard.
+
+    Seleccioné Region = NORTE y revisé la tendencia mensual
+    de Ventas Netas.
+
+    Después comparé Online con los demás canales
+    para evaluar si concentraba una parte relevante
+    de la variación observada.
+
+    También investigué si el dashboard contenía información
+    suficiente sobre descuentos, promociones
+    y su relación temporal con las ventas.
+
+    Finalmente registré al menos seis evidencias
+    o ausencias de evidencia relevantes.
+
+    Explícame cómo utilizar un dashboard como fuente de evidencia,
+    cómo evaluar una concentración sin confundirla con causalidad,
+    por qué la ausencia de datos también debe documentarse,
+    cómo mantener periodo y filtros trazables
+    y qué errores comunes podrían presentarse.
+
+tarea3:
+  title: "Explicar la Tarea 3 con IA"
+  prompt: >-
+    Explícame expertamente qué hice en la Tarea 3 del
+    Reto 6: Cuestionar una conclusión engañosa
+    del curso Data Analytics Foundations.
+
+    En esta tarea clasifiqué las cuatro afirmaciones C1 a C4
+    como Sustentada, Parcialmente sustentada o No sustentada.
+
+    Para cada una registré tanto la evidencia disponible
+    como la evidencia faltante.
+
+    Después reescribí cada afirmación utilizando expresiones
+    como el dashboard muestra, la variación se concentra,
+    se observa una asociación, los datos sugieren
+    o requiere validación adicional.
+
+    Evité expresiones como causó, demuestra o resolverá
+    cuando los datos no permitían sostenerlas.
+
+    Explícame cómo asignar un nivel de sustento,
+    por qué una asociación no demuestra causalidad,
+    cómo identificar evidencia faltante,
+    cómo reformular una afirmación excesiva
+    y qué errores comunes podrían presentarse.
+
+tarea4:
+  title: "Explicar la Tarea 4 con IA"
+  prompt: >-
+    Explícame expertamente qué hice en la Tarea 4 del
+    Reto 6: Cuestionar una conclusión engañosa
+    del curso Data Analytics Foundations.
+
+    En esta tarea integré las partes sustentadas
+    para crear una nueva conclusión ejecutiva.
+
+    Documenté qué muestra directamente la evidencia,
+    qué solamente sugiere, qué no puede concluirse
+    y qué información adicional sería necesaria.
+
+    Después redacté una conclusión de 60 a 90 palabras
+    incluyendo Evidencia, Interpretación prudente,
+    Acción reversible y Nivel de certeza.
+
+    Finalmente completé el checklist y guardé
+    C:\DAF\Reto_06\06_reto_conclusion_enganosa.xlsx.
+
+    Explícame cómo reconstruir una conclusión a partir
+    de evidencia validada, por qué la acción debe ser reversible
+    cuando existe incertidumbre, cómo comunicar un nivel de certeza,
+    cómo identificar evidencia adicional necesaria
+    y qué errores comunes podrían presentarse.

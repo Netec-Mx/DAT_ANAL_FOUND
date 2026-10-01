@@ -7,7 +7,7 @@ duration: "33 minutos"
 objective:
   - Perfilar un dataset de ventas, detectar problemas de calidad y crear en Snowflake una vista curada mínima y trazable para las prácticas posteriores.
 prerequisites:
-  - Haber completado la Práctica 1: Convertir solicitudes operativas en preguntas analíticas.
+  - Haber completado la Práctica 1; Convertir solicitudes operativas en preguntas analíticas.
   - Máquina virtual de Windows disponible.
   - Microsoft Excel, Visual Studio Code y Git Bash disponibles.
   - Cuenta de Snowflake activa con permisos de administrador o permisos equivalentes para crear base de datos, esquemas, tablas y vistas.
@@ -27,8 +27,8 @@ references:
     url: https://docs.snowflake.com/en/user-guide/data-load-web-ui
   - text: Snowflake Documentation - Workspaces
     url: https://docs.snowflake.com/en/user-guide/ui-snowsight/workspaces
-prev: /lab1/lab1/
-next: /lab3/lab3/
+prev: /lab2/lab2/
+next: /lab4/lab4/
 ---
 
 ---
@@ -52,7 +52,7 @@ Prepararás el directorio de trabajo y descargarás el archivo de datos que cont
 
 - {% include step_label.html %} Descarga el dataset de calidad desde la URL proporcionada y guárdalo en `00_recursos`.
 
-  [Descargar dataset de calidad](URL_DATASET_CALIDAD_PRACTICA_02)
+  [Descargar dataset de calidad](https://d3gfd4cq9u8k8p.cloudfront.net/courses/DAT_ANAL_FOUND/cap2/Ventas_Retail_LATAM_2026_1_Calidad.csv)
 
   ```text
   C:\DAF\00_recursos\Ventas_Retail_LATAM_2026_1_Calidad.csv
@@ -76,7 +76,7 @@ Prepararás el directorio de trabajo y descargarás el archivo de datos que cont
 
 Iniciarás sesión en Snowsight con tu cuenta y cargarás el archivo local como una tabla RAW sin aplicar transformaciones.
 
-- {% include step_label.html %} Abre `https://app.snowflake.com`, selecciona tu cuenta e inicia sesión con las credenciales proporcionadas.
+- {% include step_label.html %} Abre `https://app.snowflake.com`, **selecciona tu cuenta o la cuenta asignada al curso** e inicia sesión con las credenciales proporcionadas.
 
   > **Importante:** Usa tu cuenta de Snowflake con permisos de administrador. No guardes contraseñas ni tokens dentro de archivos SQL, Excel o Markdown.
   {: .lab-note .important .compact}
@@ -97,13 +97,13 @@ Iniciarás sesión en Snowsight con tu cuenta y cargarás el archivo local como 
   CREATE SCHEMA IF NOT EXISTS DATA_ANALYTICS_FOUNDATIONS.CURATED;
   ```
 
-  Después selecciona **Create > Table > From File**, carga:
+  - En la barra de navegación izquierda de Snowsight, localiza Create en la parte superior. **Create > Table > From File** selecciona el warehouse **COMPUTE_WH** y carga:
 
   ```text
   C:\DAF\00_recursos\Ventas_Retail_LATAM_2026_1_Calidad.csv
   ```
 
-  y crea:
+  - Despues define los siguintes valores:
 
   ```text
   Database: DATA_ANALYTICS_FOUNDATIONS
@@ -111,7 +111,7 @@ Iniciarás sesión en Snowsight con tu cuenta y cargarás el archivo local como 
   Table: VENTAS_TRANSACCIONES_2026_1
   ```
 
-  Revisa el esquema inferido y selecciona **Load**.
+  - Revisa el esquema inferido y selecciona **Load** puedes ignorar la ventana emergente.
 
   > **Advertencia:** No corrijas los datos durante la carga. Las anomalías forman parte intencional de la práctica.
   {: .lab-note .warning .compact}

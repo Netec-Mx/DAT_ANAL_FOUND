@@ -1,0 +1,152 @@
+# _data/support_prompts/lab8.yml
+# Prompts de apoyo para el Reto 4
+# Slug del laboratorio: lab8
+
+tarea1:
+  title: "Explicar la Tarea 1 con IA"
+  prompt: >-
+    Explícame expertamente qué hice en la Tarea 1 del
+    Reto 4: Investigar una región de bajo desempeño
+    del curso Data Analytics Foundations.
+
+    En esta tarea preparé la carpeta C:\DAF\Reto_04
+    y descargué la plantilla
+    Plantilla_Reto4_Region_Bajo_Desempeno.xlsx
+    y el archivo 04_reto_region_bajo_desempeno.sql.
+
+    Después formulé una hipótesis inicial sobre la región Norte,
+    cuidando que estuviera redactada como una posibilidad
+    pendiente de validación y no como una conclusión confirmada.
+
+    También definí qué entendería por bajo desempeño utilizando
+    al menos tres métricas, como variación de NetSales,
+    GrossMarginPct, AvgTicket, Transaction count o Customer count.
+
+    El objetivo fue establecer criterios medibles antes de consultar
+    los datos y evitar utilizar una sola métrica como definición
+    universal de desempeño.
+
+    Explícame por qué es importante definir previamente qué significa
+    bajo desempeño, cómo seleccionar métricas complementarias,
+    por qué una hipótesis no debe escribirse como conclusión,
+    cómo validar que los criterios son medibles y comparables
+    y qué errores comunes podrían presentarse.
+
+tarea2:
+  title: "Explicar la Tarea 2 con IA"
+  prompt: >-
+    Explícame expertamente qué hice en la Tarea 2 del
+    Reto 4: Investigar una región de bajo desempeño
+    del curso Data Analytics Foundations.
+
+    En esta tarea utilicé Snowflake para comprobar si la región Norte
+    realmente presentaba una desviación de desempeño.
+
+    Ejecuté una comparación regional entre 2024 y 2025 revisando
+    NetSales YoY %, GrossMarginPct, Transaction count,
+    Customer count y AvgTicket.
+
+    Registré los resultados en la hoja Comparacion_Regional
+    y comparé Norte tanto contra las demás regiones como contra
+    su propio desempeño del año anterior.
+
+    Después ejecuté un análisis mensual de Norte para identificar
+    los meses donde la diferencia de NetSales era más negativa
+    o relevante.
+
+    También revisé si los cambios de ventas coincidían con movimientos
+    en margen, ticket o número de transacciones.
+
+    Explícame cómo funciona una comparación YoY, por qué es importante
+    comparar periodos equivalentes, cómo interpretar conjuntamente
+    ventas, margen, ticket, transacciones y clientes, por qué una caída
+    en una métrica no implica bajo desempeño en todas las demás,
+    cómo validar la señal y qué errores comunes podrían presentarse.
+
+tarea3:
+  title: "Explicar la Tarea 3 con IA"
+  prompt: >-
+    Explícame expertamente qué hice en la Tarea 3 del
+    Reto 4: Investigar una región de bajo desempeño
+    del curso Data Analytics Foundations.
+
+    En esta tarea descompuse el desempeño de Norte por Channel
+    y Category para identificar dónde se concentraba la señal observada.
+
+    Primero comparé los canales de Norte utilizando NetSales,
+    GrossMarginPct, AvgTicket, Transactions y ReturnRate.
+
+    Registré los canales más relevantes en la hoja Descomposicion_Norte
+    y comprobé si el canal con menor venta también presentaba
+    menor margen, menor ticket o una mayor tasa de devoluciones.
+
+    Después analicé las categorías de Norte mediante ventas,
+    unidades, margen y ticket.
+
+    Seleccioné los segmentos que mostraban el desempeño más relevante
+    según los criterios definidos previamente y elegí un canal
+    o categoría que requería mayor investigación.
+
+    Explícame por qué es necesario descomponer una señal agregada,
+    cómo diferenciar bajo volumen de bajo desempeño relativo,
+    cómo interpretar métricas distintas dentro del mismo segmento,
+    cómo identificar un segmento prioritario sin asumir causalidad
+    y qué errores comunes podrían presentarse.
+
+tarea4:
+  title: "Explicar la Tarea 4 con IA"
+  prompt: >-
+    Explícame expertamente qué hice en la Tarea 4 del
+    Reto 4: Investigar una región de bajo desempeño
+    del curso Data Analytics Foundations.
+
+    En esta tarea validé que la señal detectada en Norte
+    no dependiera de problemas de cobertura, calidad o comparabilidad.
+
+    Ejecuté controles para revisar filas, transacciones únicas,
+    clientes únicos, cobertura temporal, devoluciones
+    y registros marcados como REVIEW.
+
+    Después documenté cada control en la hoja Validacion
+    y lo clasifiqué como Cumple, Observación o No cumple.
+
+    Con base en estos resultados decidí si la señal podía
+    considerarse validada, parcial o si requería revisión adicional.
+
+    Explícame por qué una señal comercial debe validarse antes
+    de convertirse en conclusión, cómo influyen cobertura temporal,
+    granularidad y registros REVIEW en la confiabilidad del análisis,
+    qué diferencia existe entre Cumple, Observación y No cumple,
+    cómo decidir si una señal es válida o parcial
+    y qué errores comunes podrían presentarse.
+
+tarea5:
+  title: "Explicar la Tarea 5 con IA"
+  prompt: >-
+    Explícame expertamente qué hice en la Tarea 5 del
+    Reto 4: Investigar una región de bajo desempeño
+    del curso Data Analytics Foundations.
+
+    En esta tarea cerré la investigación sobre la región Norte
+    utilizando la evidencia obtenida en las tareas anteriores.
+
+    En la hoja Conclusion indiqué si existía bajo desempeño
+    utilizando una de estas opciones:
+    Sí, No o Parcial / depende de la métrica.
+
+    Después redacté la evidencia principal incluyendo
+    métrica, magnitud, periodo y segmento.
+
+    Añadí una interpretación prudente y una acción recomendada,
+    evitando atribuir la desviación a promociones, inventario,
+    precio u otras variables que no habían sido medidas.
+
+    Finalmente guardé el archivo como
+    C:\DAF\Reto_04\04_reto_region_bajo_desempeno.xlsx.
+
+    Explícame cómo transformar evidencia analítica en una conclusión,
+    por qué una respuesta puede depender de la métrica utilizada,
+    cómo redactar evidencia con métrica, magnitud, periodo y segmento,
+    cómo diferenciar una recomendación de una afirmación causal,
+    cómo validar que la conclusión es trazable y qué errores comunes
+    podrían presentarse.

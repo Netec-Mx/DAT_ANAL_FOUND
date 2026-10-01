@@ -1,0 +1,151 @@
+# _data/support_prompts/lab14.yml
+# Prompts de apoyo para el Reto 7
+# Slug del laboratorio: lab14
+
+tarea1:
+  title: "Explicar la Tarea 1 con IA"
+  prompt: >-
+    Explícame expertamente qué hice en la Tarea 1 del
+    Reto 7: Recomendación al comité de operaciones
+    del curso Data Analytics Foundations.
+
+    En esta tarea preparé C:\DAF\Reto_07,
+    descargué la plantilla del reto
+    y revisé los tres hallazgos priorizados
+    del caso integral de la Práctica 7.
+
+    Después seleccioné una única situación
+    que requiriera una decisión concreta del comité.
+
+    Documenté situación prioritaria,
+    métrica principal, segmento, periodo,
+    decisión requerida y criterio de éxito.
+
+    Explícame cómo seleccionar una prioridad
+    a partir de varios hallazgos,
+    por qué la decisión debe ser específica,
+    cómo relacionar métrica, segmento y periodo,
+    cómo definir un criterio de éxito
+    y qué errores comunes podrían presentarse.
+
+tarea2:
+  title: "Explicar la Tarea 2 con IA"
+  prompt: >-
+    Explícame expertamente qué hice en la Tarea 2 del
+    Reto 7: Recomendación al comité de operaciones
+    del curso Data Analytics Foundations.
+
+    En esta tarea seleccioné tres evidencias
+    provenientes de SQL, Power BI
+    o la matriz de evidencia del caso integral.
+
+    Para cada evidencia documenté fuente,
+    filtros, valor o magnitud, comparación,
+    qué demuestra y limitación.
+
+    También confirmé que las tres evidencias
+    apoyaran directamente la misma decisión prioritaria
+    y que utilizaran periodos y segmentos comparables.
+
+    Cuando una evidencia provenía de Power BI,
+    confirmé sus filtros y, cuando era posible,
+    verifiqué el resultado contra Snowflake.
+
+    Explícame qué hace que una evidencia sea trazable,
+    por qué debe registrarse su contexto,
+    cómo evaluar si una evidencia es pertinente
+    para una decisión, por qué evidencia interesante
+    no siempre significa evidencia relevante
+    y qué errores comunes podrían presentarse.
+
+tarea3:
+  title: "Explicar la Tarea 3 con IA"
+  prompt: >-
+    Explícame expertamente qué hice en la Tarea 3 del
+    Reto 7: Recomendación al comité de operaciones
+    del curso Data Analytics Foundations.
+
+    En esta tarea definí tres alternativas
+    posibles frente a la situación prioritaria.
+
+    Para cada alternativa documenté evidencia a favor,
+    riesgo, información faltante, factibilidad
+    e impacto esperado.
+
+    Utilicé escalas consistentes como Alta,
+    Media o Baja para factibilidad e impacto.
+
+    También evalué explícitamente la alternativa
+    No actuar aún cuando la evidencia disponible
+    no justificaba una intervención inmediata.
+
+    Explícame por qué deben compararse alternativas
+    antes de recomendar una acción,
+    cómo diferenciar impacto esperado de una promesa,
+    cómo evaluar riesgos y factibilidad,
+    por qué No actuar aún también puede ser una decisión analítica
+    y qué errores comunes podrían presentarse.
+
+tarea4:
+  title: "Explicar la Tarea 4 con IA"
+  prompt: >-
+    Explícame expertamente qué hice en la Tarea 4 del
+    Reto 7: Recomendación al comité de operaciones
+    del curso Data Analytics Foundations.
+
+    En esta tarea seleccioné una alternativa
+    y formulé la recomendación para el comité.
+
+    Documenté recomendación, evidencia principal,
+    alternativa descartada, riesgo principal,
+    acción inmediata, próximo paso
+    y nivel de certeza.
+
+    También definí una condición concreta
+    que podría hacer cambiar la decisión
+    si apareciera nueva evidencia.
+
+    Finalmente revisé la redacción para evitar
+    afirmar causalidad cuando el análisis
+    solamente demostraba asociación o concentración.
+
+    Explícame cómo seleccionar una alternativa
+    sin ignorar las demás, cómo justificar una recomendación,
+    cómo incorporar riesgo y nivel de certeza,
+    por qué toda recomendación puede tener
+    una condición de revisión y qué errores comunes
+    podrían presentarse.
+
+tarea5:
+  title: "Explicar la Tarea 5 con IA"
+  prompt: >-
+    Explícame expertamente qué hice en la Tarea 5 del
+    Reto 7: Recomendación al comité de operaciones
+    del curso Data Analytics Foundations.
+
+    En esta tarea preparé el brief ejecutivo final.
+
+    Documenté decisión solicitada,
+    hallazgo principal, tres evidencias,
+    recomendación y riesgo o limitación.
+
+    Después comprobé que el documento permitiera responder:
+    qué problema requiere atención,
+    qué evidencia lo demuestra,
+    qué alternativas fueron consideradas,
+    qué se recomienda,
+    qué riesgo existe
+    y qué debe decidir el comité.
+
+    Finalmente completé el checklist y guardé
+    C:\DAF\Reto_07\07_recomendacion_comite.xlsx
+    como entregable final.
+
+    Explícame cómo resumir un análisis complejo
+    en un brief ejecutivo de una página,
+    cómo seleccionar evidencia suficiente sin sobrecargar el mensaje,
+    cómo diferenciar hallazgo de recomendación,
+    cómo comunicar riesgos y limitaciones,
+    cómo validar que el comité puede tomar una decisión
+    leyendo únicamente el brief
+    y qué errores comunes podrían presentarse.

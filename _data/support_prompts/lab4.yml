@@ -1,87 +1,89 @@
-# Prompts de apoyo para la Práctica 4
-# El slug del laboratorio debe ser: lab4
+# _data/support_prompts/lab4.yml
+# Prompts de apoyo para el Reto 2
+# Slug del laboratorio: lab4
 
 tarea1:
   title: "Explicar la Tarea 1 con IA"
   prompt: >-
-    Explícame expertamente qué hice en la Tarea 1 de la
-    Práctica 4 de Couchbase Server.
+    Explícame expertamente qué hice en la Tarea 1 del
+    Reto 2: Liberación o revisión de un archivo mensual
+    del curso Data Analytics Foundations.
 
-    CONTEXTO_DE_LA_TAREA_1_AQUI.
+    En esta tarea preparé la carpeta C:\DAF\Reto_02,
+    descargué el archivo mensual de ventas, la plantilla del reto
+    y el archivo SQL de controles.
 
-    Explica el propósito de cada comando, configuración o procedimiento,
-    cómo interpretar las salidas esperadas, cómo validar que la tarea se
-    completó correctamente y qué errores comunes podrían presentarse.
+    Conservé el CSV original sin modificaciones y lo guardé como recurso
+    de entrada para mantener trazabilidad.
+
+    Después accedí a Snowflake mediante Snowsight y cargué el archivo
+    Ventas_Retail_LATAM_2025_12_Mensual.csv en una tabla independiente
+    llamada DATA_ANALYTICS_FOUNDATIONS.RAW.VENTAS_MENSUALES_2025_12.
+
+    La tabla se creó separada de la utilizada en la Práctica 2 para evaluar
+    el lote mensual sin afectar la fuente principal del curso.
+
+    Explícame por qué es importante conservar el archivo original sin
+    modificar, por qué conviene cargar el lote mensual en una tabla
+    independiente, qué debo verificar durante la carga en Snowflake,
+    cómo validar que la tabla quedó correctamente creada y qué errores
+    comunes podrían presentarse.
 
 tarea2:
   title: "Explicar la Tarea 2 con IA"
   prompt: >-
-    Explícame expertamente qué hice en la Tarea 2 de la
-    Práctica 4 de Couchbase Server.
+    Explícame expertamente qué hice en la Tarea 2 del
+    Reto 2: Liberación o revisión de un archivo mensual
+    del curso Data Analytics Foundations.
 
-    CONTEXTO_DE_LA_TAREA_2_AQUI.
+    En esta tarea utilicé el archivo
+    02_reto_liberacion_archivo_mensual.sql
+    dentro de Snowflake Workspaces para ejecutar los controles de calidad
+    del archivo mensual.
 
-    Explica el propósito de cada comando, configuración o procedimiento,
-    cómo interpretar las salidas esperadas, cómo validar que la tarea se
-    completó correctamente y qué errores comunes podrían presentarse.
+    Revisé volumen y cobertura temporal, campos críticos faltantes,
+    valores de Quantity y DiscountPct fuera de regla, registros fuera
+    de diciembre de 2025 y TransactionID repetidos.
+
+    Después registré los resultados cuantitativos en la hoja Controles
+    de la plantilla de Excel y clasifiqué cada control como Cumple,
+    Observación o No cumple.
+
+    No corregí ni eliminé registros durante el análisis; únicamente
+    documenté las condiciones encontradas.
+
+    Explícame qué evalúa cada control de calidad, por qué deben registrarse
+    valores cuantitativos en lugar de escribir solo “bien” o “mal”,
+    cómo interpretar un TransactionID repetido, cómo distinguir una
+    observación de un incumplimiento, cómo validar que los controles
+    quedaron completos y qué errores comunes podrían presentarse.
 
 tarea3:
   title: "Explicar la Tarea 3 con IA"
   prompt: >-
-    Explícame expertamente qué hice en la Tarea 3 de la
-    Práctica 4 de Couchbase Server.
+    Explícame expertamente qué hice en la Tarea 3 del
+    Reto 2: Liberación o revisión de un archivo mensual
+    del curso Data Analytics Foundations.
 
-    CONTEXTO_DE_LA_TAREA_3_AQUI.
+    En esta tarea revisé conjuntamente los cinco controles de calidad
+    y seleccioné un estado final para el archivo mensual.
 
-    Explica el propósito de cada comando, configuración o procedimiento,
-    cómo interpretar las salidas esperadas, cómo validar que la tarea se
-    completó correctamente y qué errores comunes podrían presentarse.
+    Las opciones posibles fueron LIBERAR,
+    LIBERAR_CON_OBSERVACIONES o MANTENER_EN_REVISION.
 
-tarea4:
-  title: "Explicar la Tarea 4 con IA"
-  prompt: >-
-    Explícame expertamente qué hice en la Tarea 4 de la
-    Práctica 4 de Couchbase Server.
+    Para sustentar la decisión escribí una justificación basada en al menos
+    tres resultados cuantitativos observados durante los controles.
 
-    CONTEXTO_DE_LA_TAREA_4_AQUI.
+    También registré una acción recomendada, como corregir registros
+    identificados, solicitar confirmación al origen o liberar el archivo
+    con excepciones documentadas.
 
-    Explica el propósito de cada comando, configuración o procedimiento,
-    cómo interpretar las salidas esperadas, cómo validar que la tarea se
-    completó correctamente y qué errores comunes podrían presentarse.
+    Finalmente guardé el entregable como
+    C:\DAF\Reto_02\02_reto_liberacion.xlsx.
 
-tarea5:
-  title: "Explicar la Tarea 5 con IA"
-  prompt: >-
-    Explícame expertamente qué hice en la Tarea 5 de la
-    Práctica 4 de Couchbase Server.
-
-    CONTEXTO_DE_LA_TAREA_5_AQUI.
-
-    Explica el propósito de cada comando, configuración o procedimiento,
-    cómo interpretar las salidas esperadas, cómo validar que la tarea se
-    completó correctamente y qué errores comunes podrían presentarse.
-
-tarea6:
-  title: "Explicar la Tarea 6 con IA"
-  prompt: >-
-    Explícame expertamente qué hice en la Tarea 6 de la
-    Práctica 4 de Couchbase Server.
-
-    CONTEXTO_DE_LA_TAREA_6_AQUI.
-
-    Explica el propósito de cada comando, configuración o procedimiento,
-    cómo interpretar las salidas esperadas, cómo validar que la tarea se
-    completó correctamente y qué errores comunes podrían presentarse.
-
-tarea7:
-  title: "Explicar la Tarea 7 con IA"
-  prompt: >-
-    Explícame expertamente qué hice en la Tarea 7 de la
-    Práctica 4 de Couchbase Server.
-
-    CONTEXTO_DE_LA_TAREA_7_AQUI.
-
-    Explica el propósito de cada comando, configuración o procedimiento,
-    cómo interpretar las salidas esperadas, cómo validar que la tarea se
-    completó correctamente y qué errores comunes podrían presentarse.
-
+    Explícame cómo interpretar conjuntamente varios controles de calidad,
+    qué diferencia existe entre LIBERAR, LIBERAR_CON_OBSERVACIONES y
+    MANTENER_EN_REVISION, por qué la decisión debe estar sustentada con
+    evidencia cuantitativa, cómo formular una acción recomendada proporcional
+    al problema encontrado, cómo validar que el entregable quedó completo
+    y qué errores comunes podrían presentarse.

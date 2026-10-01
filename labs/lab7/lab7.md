@@ -33,8 +33,8 @@ references:
     url: https://docs.snowflake.com/en/sql-reference/functions-analytic
   - text: Snowflake Documentation - Workspaces
     url: https://docs.snowflake.com/en/user-guide/ui-snowsight/workspaces
-prev: /reto3/reto3/
-next: /reto4/reto4/
+prev: /lab6/lab6/
+next: /lab8/lab8/
 ---
 
 ---
@@ -56,8 +56,8 @@ Prepararás los archivos de trabajo y confirmarás las definiciones de KPI antes
 
 - {% include step_label.html %} Descarga la plantilla Excel y el archivo SQL.
 
-  1. [Descargar plantilla de la Práctica 4](URL_PLANTILLA_PRACTICA_04)
-  2. [Descargar SQL de exploración](URL_SQL_PRACTICA_04)
+  1. [Descargar plantilla de la Práctica 4](https://d3gfd4cq9u8k8p.cloudfront.net/courses/DAT_ANAL_FOUND/cap4/Plantilla_Practica4_Exploracion_Desempeno.xlsx)
+  2. [Descargar SQL de exploración](https://d3gfd4cq9u8k8p.cloudfront.net/courses/DAT_ANAL_FOUND/cap4/04_exploracion_desempeno.sql)
 
   Guarda los archivos como:
 
@@ -76,7 +76,7 @@ Prepararás los archivos de trabajo y confirmarás las definiciones de KPI antes
   > **Salida esperada:** Se muestra Snowflake Workspaces con acceso a `DATA_ANALYTICS_FOUNDATIONS.CURATED`.
   {: .lab-note .output .compact}
 
-- {% include step_label.html %} Abre un SQL File llamado `04_exploracion_desempeno.sql`, copia el contenido del archivo descargado y ejecuta la primera consulta.
+- {% include step_label.html %} Crea un SQL File llamado `04_exploracion_desempeno.sql`, copia el contenido del archivo descargado y ejecuta la primera consulta.
 
   > **Salida esperada:** Se muestran filas válidas, transacciones, clientes, fechas, ventas netas y margen bruto.
   {: .lab-note .output .compact}
@@ -109,7 +109,7 @@ Analizarás la evolución mensual de ventas y margen para detectar cambios que r
 
 ### Tarea 2.1. Calcular la tendencia
 
-- {% include step_label.html %} Ejecuta la consulta mensual incluida en `04_exploracion_desempeno.sql`.
+- {% include step_label.html %} Ejecuta la **consulta mensual** incluida en `04_exploracion_desempeno.sql`.
 
   > **Salida esperada:** Se obtienen 24 meses de resultados con ventas, margen, unidades, clientes, ticket y variaciones.
   {: .lab-note .output .compact}
@@ -199,7 +199,7 @@ Validarás las tres señales y seleccionarás los insumos que deberán aparecer 
 
 ### Tarea 4.1. Validar las señales
 
-- {% include step_label.html %} Ejecuta la consulta de cobertura mensual incluida al final del SQL.
+- {% include step_label.html %} Ejecuta la consulta de **cobertura mensual** incluida al final del SQL.
 
   > **Salida esperada:** Se dispone de días con datos y transacciones por mes.
   {: .lab-note .output .compact}

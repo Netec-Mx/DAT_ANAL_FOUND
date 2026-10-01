@@ -1,87 +1,118 @@
-# Prompts de apoyo para la Práctica 5
-# El slug del laboratorio debe ser: lab5
+# _data/support_prompts/lab5.yml
+# Prompts de apoyo para la Práctica 3
+# Slug del laboratorio: lab5
 
 tarea1:
   title: "Explicar la Tarea 1 con IA"
   prompt: >-
     Explícame expertamente qué hice en la Tarea 1 de la
-    Práctica 5 de Couchbase Server.
+    Práctica 3: Análisis descriptivo de ventas y clientes
+    del curso Data Analytics Foundations.
 
-    CONTEXTO_DE_LA_TAREA_1_AQUI.
+    En esta tarea preparé la carpeta C:\DAF\Practica_03
+    y descargué la plantilla Excel y el archivo
+    03_analisis_descriptivo.sql.
 
-    Explica el propósito de cada comando, configuración o procedimiento,
-    cómo interpretar las salidas esperadas, cómo validar que la tarea se
-    completó correctamente y qué errores comunes podrían presentarse.
+    Después accedí a Snowflake Workspaces y trabajé con la vista
+    DATA_ANALYTICS_FOUNDATIONS.CURATED.VENTAS_TRANSACCIONES_CURADAS_2026_1,
+    utilizando únicamente registros con QUALITYFLAG = 'VALID'.
+
+    Ejecuté una consulta inicial para obtener filas válidas,
+    transacciones únicas, clientes únicos, fecha mínima y fecha máxima.
+
+    Finalmente registré estos resultados en la hoja Alcance de Excel
+    y revisé si el número de filas coincidía o no con el número de
+    TransactionID distintos para determinar correctamente la granularidad.
+
+    Explícame qué significa población analítica, granularidad y unidad
+    de análisis, por qué debo distinguir filas, transacciones y clientes,
+    qué implica que el número de filas sea diferente al número de
+    TransactionID distintos, cómo validar que el alcance temporal es
+    adecuado y qué errores comunes podrían presentarse.
 
 tarea2:
   title: "Explicar la Tarea 2 con IA"
   prompt: >-
     Explícame expertamente qué hice en la Tarea 2 de la
-    Práctica 5 de Couchbase Server.
+    Práctica 3: Análisis descriptivo de ventas y clientes
+    del curso Data Analytics Foundations.
 
-    CONTEXTO_DE_LA_TAREA_2_AQUI.
+    En esta tarea calculé estadísticos descriptivos sobre NetSales,
+    Quantity y DiscountPct utilizando únicamente la población válida.
 
-    Explica el propósito de cada comando, configuración o procedimiento,
-    cómo interpretar las salidas esperadas, cómo validar que la tarea se
-    completó correctamente y qué errores comunes podrían presentarse.
+    Para cada variable obtuve N, media, mediana, mínimo, máximo,
+    P25, P75 y P95 y registré los resultados en la hoja Estadisticos
+    de Excel.
+
+    Después comparé la media y la mediana de NetSales para interpretar
+    posibles diferencias en la distribución y revisé que los percentiles
+    cumplieran el orden lógico P25 <= Mediana <= P75 <= P95.
+
+    También interpreté el P95 de NetSales como una posición dentro de
+    la distribución y no como un objetivo comercial.
+
+    Explícame qué representa cada estadístico, cuál es la diferencia
+    entre media y mediana, qué puede sugerir una media mayor que la
+    mediana, cómo interpretar correctamente los percentiles, por qué
+    el máximo no representa necesariamente un valor típico, cómo validar
+    los resultados y qué errores comunes podrían presentarse.
 
 tarea3:
   title: "Explicar la Tarea 3 con IA"
   prompt: >-
     Explícame expertamente qué hice en la Tarea 3 de la
-    Práctica 5 de Couchbase Server.
+    Práctica 3: Análisis descriptivo de ventas y clientes
+    del curso Data Analytics Foundations.
 
-    CONTEXTO_DE_LA_TAREA_3_AQUI.
+    En esta tarea comparé el desempeño comercial por Region y Channel.
 
-    Explica el propósito de cada comando, configuración o procedimiento,
-    cómo interpretar las salidas esperadas, cómo validar que la tarea se
-    completó correctamente y qué errores comunes podrían presentarse.
+    Para Region analicé transacciones, clientes únicos, venta neta total
+    y venta neta promedio.
+
+    Para Channel analicé transacciones, venta neta total,
+    venta neta promedio, devoluciones y tasa de devolución.
+
+    También comparé SUM(NetSales) y AVG(NetSales) para identificar
+    situaciones donde una métrica de volumen y una métrica promedio
+    producen interpretaciones diferentes.
+
+    Finalmente calculé las tasas globales de descuento y devolución
+    y las registré como porcentajes junto con su volumen de referencia.
+
+    Explícame la diferencia entre venta total y venta promedio,
+    por qué el segmento con mayor venta total no necesariamente tiene
+    el mayor promedio, cómo se interpreta correctamente una tasa,
+    por qué debe revisarse siempre su denominador, cómo comparar
+    regiones y canales de manera consistente y qué errores comunes
+    podrían presentarse.
 
 tarea4:
   title: "Explicar la Tarea 4 con IA"
   prompt: >-
     Explícame expertamente qué hice en la Tarea 4 de la
-    Práctica 5 de Couchbase Server.
+    Práctica 3: Análisis descriptivo de ventas y clientes
+    del curso Data Analytics Foundations.
 
-    CONTEXTO_DE_LA_TAREA_4_AQUI.
+    En esta tarea cambié la unidad de análisis de transacción a cliente
+    para estudiar recurrencia.
 
-    Explica el propósito de cada comando, configuración o procedimiento,
-    cómo interpretar las salidas esperadas, cómo validar que la tarea se
-    completó correctamente y qué errores comunes podrían presentarse.
+    Ejecuté la consulta customer_frequency y obtuve número de clientes,
+    clientes recurrentes, proporción de clientes recurrentes,
+    frecuencia promedio, frecuencia mediana y frecuencia máxima.
 
-tarea5:
-  title: "Explicar la Tarea 5 con IA"
-  prompt: >-
-    Explícame expertamente qué hice en la Tarea 5 de la
-    Práctica 5 de Couchbase Server.
+    Registré los resultados en la hoja Clientes y verifiqué que el
+    denominador de la recurrencia fuera el número de clientes únicos
+    y no el número de transacciones.
 
-    CONTEXTO_DE_LA_TAREA_5_AQUI.
+    Después completé la hoja Validacion con métricas obtenidas en
+    Snowflake, como transacciones válidas, clientes únicos,
+    venta neta promedio, mediana, tasa de descuento y tasa de devolución.
 
-    Explica el propósito de cada comando, configuración o procedimiento,
-    cómo interpretar las salidas esperadas, cómo validar que la tarea se
-    completó correctamente y qué errores comunes podrían presentarse.
+    Finalmente guardé 03_resultados_descriptivos.xlsx y
+    03_analisis_descriptivo.sql para reutilizarlos en la Práctica 4.
 
-tarea6:
-  title: "Explicar la Tarea 6 con IA"
-  prompt: >-
-    Explícame expertamente qué hice en la Tarea 6 de la
-    Práctica 5 de Couchbase Server.
-
-    CONTEXTO_DE_LA_TAREA_6_AQUI.
-
-    Explica el propósito de cada comando, configuración o procedimiento,
-    cómo interpretar las salidas esperadas, cómo validar que la tarea se
-    completó correctamente y qué errores comunes podrían presentarse.
-
-tarea7:
-  title: "Explicar la Tarea 7 con IA"
-  prompt: >-
-    Explícame expertamente qué hice en la Tarea 7 de la
-    Práctica 5 de Couchbase Server.
-
-    CONTEXTO_DE_LA_TAREA_7_AQUI.
-
-    Explica el propósito de cada comando, configuración o procedimiento,
-    cómo interpretar las salidas esperadas, cómo validar que la tarea se
-    completó correctamente y qué errores comunes podrían presentarse.
-
+    Explícame por qué es necesario cambiar la granularidad cuando
+    se analiza recurrencia, cómo se calcula e interpreta una proporción
+    de clientes recurrentes, por qué no debe interpretarse como una
+    predicción de recompra futura, cómo validar resultados entre
+    Snowflake y Excel y qué errores comunes podrían presentarse.

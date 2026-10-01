@@ -7,7 +7,7 @@ duration: "13 minutos"
 objective:
   - Formular de manera autónoma una pregunta analítica medible a partir de una solicitud comercial ambigua, identificando la decisión, la métrica, el periodo, las dimensiones y una hipótesis que deberá validarse posteriormente.
 prerequisites:
-  - Haber completado la Práctica 1: Convertir solicitudes operativas en preguntas analíticas.
+  - Haber completado la Práctica 1; Convertir solicitudes operativas en preguntas analíticas.
   - Disponer de Microsoft Excel para Microsoft 365.
   - Tener acceso a Internet para descargar la plantilla del reto.
   - Conservar los recursos compartidos en C:\\DAF\\00_recursos\\.
@@ -26,7 +26,7 @@ references:
   - text: Snowflake Documentation
     url: https://docs.snowflake.com/
 prev: /lab1/lab1/
-next: /lab2/lab2/
+next: /lab3/lab3/
 ---
 
 <!-- Aquí comienzan las instrucciones paso a paso del reto -->
@@ -53,7 +53,7 @@ Crearás la carpeta del Reto 01 dentro del directorio central y descargarás la 
 
 - {% include step_label.html %} Descarga la plantilla del reto desde la URL proporcionada, ábrela en Excel y guarda la copia de trabajo con el nombre indicado.
 
-  [Descargar plantilla del Reto 1](URL_PLANTILLA_RETO_01)
+  [Descargar plantilla del Reto 1](https://d3gfd4cq9u8k8p.cloudfront.net/courses/DAT_ANAL_FOUND/cap1/Plantilla_Reto1_Diagnostico.xlsx)
 
   Guarda primero la descarga como:
 
