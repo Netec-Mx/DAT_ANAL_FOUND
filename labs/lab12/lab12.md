@@ -26,8 +26,10 @@ notes:
   - No sustentada significa no demostrada con la evidencia disponible; no significa necesariamente falsa.
   - Una correlación o concentración visible no demuestra causalidad.
 references:
-  - text: Dashboard construido en la Práctica 5
-    url: URL_DASHBOARD_PRACTICA_05
+  - text: Guías de Power BI
+    url: https://learn.microsoft.com/power-bi/guidance/
+  - text: Gráficas y visualización de datos
+    url: https://analysisfunction.civilservice.gov.uk/policy-store/data-visualisation-charts/
 prev: /lab11/lab11/
 next: /lab13/lab13/
 ---
